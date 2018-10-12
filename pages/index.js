@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 import Layout from './../components/Layout';
+import TestContainer from './../components/TestContainer';
+import ProjectSection from './../components/ProjectSection';
+import PostSection from '../components/PostSection';
+import VideoSection from '../components/VideoSection';
+import SocialSection from '../components/SocialSection';
 
 class Landing extends Component {
 
@@ -10,9 +15,17 @@ class Landing extends Component {
 
     render() {
         return (
-            <Layout>
-                <div>Welcome to next.js!</div>
-            </Layout>
+            <div>
+                <Layout>
+                    <TestContainer></TestContainer>
+                    <ProjectSection></ProjectSection>
+                    <PostSection></PostSection>
+                    <VideoSection></VideoSection>
+                    <SocialSection></SocialSection>
+                </Layout>
+
+            </div>
+
         );
     }
 }

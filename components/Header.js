@@ -10,7 +10,7 @@ export default () => {
             <Menu.Menu position="right">
                 <Menu.Item>home</Menu.Item>
                 <Menu.Item>il progetto</Menu.Item>
-                <Menu.Item>l'instalazione</Menu.Item>
+                <Menu.Item>l'installazione</Menu.Item>
                 <Menu.Item>testimonianze</Menu.Item>
                 <Menu.Item>chi siamo</Menu.Item>
             </Menu.Menu>
