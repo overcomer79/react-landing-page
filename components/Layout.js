@@ -6,7 +6,7 @@ import Header from './Header'
 
 export default (props) => {
     return (
-        <Container>
+        <div>
             <Head>
                 <link
                     rel="stylesheet"
@@ -21,6 +21,6 @@ export default (props) => {
             <Header />
             {props.children}
             <h1>Footer</h1>
-        </Container>
+        </div>
     );
 };

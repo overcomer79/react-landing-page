@@ -3,12 +3,14 @@ import {
     Grid, 
     Image, 
     Header,
-    Button
+    Button,
+    Container
 } from 'semantic-ui-react';
 
 export default () => {
     return (
-        <Grid divided='vertically'>
+        <Container>
+            <Grid divided='vertically'>
             <Grid.Row columns={2}>
                 <Grid.Column width={12}>
                     <Header size='huge'>
@@ -27,7 +29,9 @@ export default () => {
                         In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
                         link mollis pretium.
                     </p>
-                    <Button>INIZIA</Button>
+                    <Button basic size="massive">
+                    <p style={{fontSize:'50%'}}>INIZIA</p>
+                    </Button>
                 </Grid.Column>
                 <Grid.Column
                     style={{
@@ -47,5 +51,6 @@ export default () => {
 
         </Grid>
 
+        </Container>
     );
 }

@@ -29,7 +29,7 @@ class Landing extends Component {
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row >
-                            <Grid.Column color='#fff'>
+                            <Grid.Column style={{ backgroundColor: 'white' }}>
                                 <ProjectSection></ProjectSection>
                             </Grid.Column>
                         </Grid.Row>

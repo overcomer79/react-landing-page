@@ -1,7 +1,8 @@
 import React from 'react';
 
 import {
-    Header
+    Header,
+    Container
 } from 'semantic-ui-react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -9,7 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 export default () => {
     return (
-        <div>
+        <Container>
             <Header sub style={{ textDecorationLine: 'underline' }} > LE TESTIMONIANZE </Header>
             <Carousel>
                 <div>
@@ -25,6 +26,6 @@ export default () => {
                     <p className="legend">Legend 3</p>
                 </div>
             </Carousel>
-        </div>
+        </Container>
     );
 }
