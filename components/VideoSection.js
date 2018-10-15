@@ -1,7 +1,13 @@
 import React from 'react';
+import { Embed } from 'semantic-ui-react';
 
 export default () => {
     return (
-        <h1> Video Section</h1>
+        <Embed 
+        id='O6Xo21L0ybE'
+        brandedUI
+        placeholder='static/images/sample_img.png' 
+        source='youtube' 
+        />
     );
 }
