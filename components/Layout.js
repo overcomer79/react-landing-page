@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import { Container } from 'semantic-ui-react'
 
 import Header from './Header'
 
@@ -20,7 +19,7 @@ export default (props) => {
 
             <Header />
             {props.children}
-            <h1>Footer</h1>
+            <h1 style={{minHeight:300}}>Footer</h1>
         </div>
     );
 };

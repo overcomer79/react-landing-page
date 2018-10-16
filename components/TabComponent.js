@@ -10,7 +10,7 @@ import {
 
 const panes = [
     {
-        menuItem: (<div key='none' style={{ margin: '2em' }}></div>)
+        menuItem: (<div key='none' style={{ margin: '3em' }}></div>)
     },
     {
         menuItem: (

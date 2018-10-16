@@ -9,7 +9,7 @@ import TestContainer from './../components/TestContainer';
 import ProjectSection from './../components/ProjectSection';
 import PostSection from '../components/PostSection';
 import VideoSection from '../components/VideoSection';
-import SocialSection from '../components/SocialSection';
+import SocialSection from '../components/socialSection/SocialSection';
 import CooperationSection from '../components/CooperationSection';
 
 class Landing extends Component {
@@ -29,13 +29,13 @@ class Landing extends Component {
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row >
-                            <Grid.Column style={{ backgroundColor: 'white' }}>
+                            <Grid.Column style={{ backgroundColor: 'white'}} className='extended'>
                                 <ProjectSection></ProjectSection>
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
-                            <Grid.Column>
-                                <VideoSection></VideoSection>
+                            <Grid.Column className='extended' >
+                                <VideoSection></VideoSection >
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
@@ -49,7 +49,7 @@ class Landing extends Component {
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
-                            <Grid.Column>
+                            <Grid.Column className='extended'>
                                 <SocialSection></SocialSection>
                             </Grid.Column>
                         </Grid.Row>

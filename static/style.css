@@ -1,3 +1,6 @@
 body {
     background-color: rgba(221, 221, 221, 0.801);
 }
+.extended {
+    padding: 0 !important
+}

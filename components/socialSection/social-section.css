@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 10px;
+  background: gainsboro;
+}
+
+#instafeed {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#instafeed a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  background: white;
+}
+@media only screen and (min-width: 580px) {
+  #instafeed a {
+    width: 14%;
+  }
+}
+#instafeed a img {
+  display: block;
+  width: 100%;
+}
