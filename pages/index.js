@@ -52,11 +52,11 @@ class Landing extends Component {
                                 <CooperationSection></CooperationSection>
                             </Grid.Column>
                         </Grid.Row>
-                        <Grid.Row>
+                        {/* <Grid.Row>
                             <Grid.Column className='extended'>
                                 <SocialSection></SocialSection>
                             </Grid.Column>
-                        </Grid.Row>
+                        </Grid.Row> */}
                     </Grid>
                 </Layout>
             </div>

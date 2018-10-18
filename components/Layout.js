@@ -1,13 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
 
-import Header from './header/Header'
+import Header from './header/Header';
+import Footer from './footer/Footer';
 
 export default (props) => {
     return (
         <div>
             <Head>
-                <style dangerouslySetInnerHTML={{__html: `
+                <style dangerouslySetInnerHTML={{
+                    __html: `
                         @font-face {
                             font-family: 'Ubuntu Mono';
                             font-weight: 300;
@@ -29,12 +31,12 @@ export default (props) => {
                     rel="stylesheet"
                     href="static/style.css"
                 />
-                
+
             </Head>
 
             <Header />
             {props.children}
-            <h1 style={{minHeight:300}}>Footer</h1>
+            <Footer />
         </div>
     );
 };

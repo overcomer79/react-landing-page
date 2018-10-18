@@ -29,16 +29,17 @@ class ProjectSection extends Component {
                     {/* </ScrollableAnchor> */}
                     <Header className='project-title' size='huge'>Amare con sapienza</Header>
 
-                    <p> 
+                    <p>
                         Amare con Sapienza è <b>un'iniziativa a cura del Dipartimento di Malattie Infettive
                         e Sanità Pubblica dell'Università Sapienza.</b></p>
-                    <p> 
+                    <p>
                         L'obiettivo del progetto, <b>vincitore delbando Digital Health 2017</b>,
                         è valutare l'efficacia di digital ambient media nella prevenzione dell'infezione da HIV.
                     </p>
                 </Container>
 
                 <TabComponent></TabComponent>
+
             </div>
         );
     }

@@ -1,0 +1,58 @@
+
+/*
+To use to move image on responsive page
+.footer-image-group {
+    width: 100%;
+    margin: auto;
+    display: block;
+    flex-wrap: wrap;
+}
+.footer-image-group a {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    background: white;
+}
+@media only screen and (min-width: 580px) {
+    .footer-image-group a {
+      width: 14.28%;
+    }
+}
+.footer-image-group a img {
+    display: block;
+    width: 100%;
+}
+*/
+
+/* To use to left the images always on-line
+*/
+.footer-image-group {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.footer-image {
+    width: 14.28%;
+    display: inline-block !important;
+}
+
+.footer-bar {
+    background-color: #24226b;
+    padding: 40px 0px;
+    color: white;
+}
+
+.footer-copy {
+    color: #ccc;
+    font-size: x-small;
+}
+
+.footer-icon {
+    max-width: 40px;
+}
+
+.footer-contact {
+    display: inline-flex;
+    align-items: center;
+}

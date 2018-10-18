@@ -4,6 +4,8 @@
 }
 */
 
+html, body {margin: 0; padding: 0; overflow-x:hidden;}
+
 .section-title, .section-title:hover {
     text-decoration: none;
     border-bottom-width: 1px;
@@ -19,4 +21,8 @@
     font-family: 'Ubuntu Mono', Fallback, sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
+}
+
+.ui.attached.tabular.menu{
+    margin: 0 auto !important;
 }
