@@ -5,8 +5,10 @@ import {
 } from 'semantic-ui-react';
 
 import Layout from './../components/Layout';
+/*
 import TestContainer from './../components/TestContainer';
-import ProjectSection from './../components/ProjectSection';
+*/
+import ProjectSection from './../components/projectSection/ProjectSection';
 import PostSection from '../components/PostSection';
 import VideoSection from '../components/VideoSection';
 import SocialSection from '../components/socialSection/SocialSection';
@@ -22,20 +24,22 @@ class Landing extends Component {
         return (
             <div>
                 <Layout>
+                    <ProjectSection></ProjectSection>
+                    <VideoSection></VideoSection >
                     <Grid>
-                        <Grid.Row>
+                        {/* <Grid.Row>
                             <Grid.Column>
                                 <TestContainer></TestContainer>
                             </Grid.Column>
-                        </Grid.Row>
+                        </Grid.Row> */}
                         <Grid.Row >
                             <Grid.Column style={{ backgroundColor: 'white'}} className='extended'>
-                                <ProjectSection></ProjectSection>
+                                
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>
                             <Grid.Column className='extended' >
-                                <VideoSection></VideoSection >
+                                
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row>

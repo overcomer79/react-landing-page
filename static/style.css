@@ -1,6 +1,22 @@
-body {
-    background-color: rgba(221, 221, 221, 0.801);
-}
+/*
 .extended {
     padding: 0 !important
+}
+*/
+
+.section-title, .section-title:hover {
+    text-decoration: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 1.5px;
+    color: black;
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    letter-spacing: 2px;
+}
+
+.button-text {
+    color: white !important;
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
 }

@@ -6,7 +6,7 @@ export default () => {
         <Embed 
         id='O6Xo21L0ybE'
         brandedUI
-        placeholder='static/images/sample_img.png' 
+        placeholder='static/images/img_video.jpg' 
         source='youtube' 
         />
     );

@@ -1,0 +1,11 @@
+.tab-content {
+    padding:30px !important;
+}
+
+.tab-title {
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-right: 30px;
+}

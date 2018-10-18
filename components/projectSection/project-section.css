@@ -1,0 +1,13 @@
+.project-title {
+    font-weight: 400 !important;
+}
+.ui.tabular.menu .active.item {
+    border-color: grey;
+    border-radius: .57142858rem .57142858rem 0 0!important;
+    /* box-shadow: 10px 10px 5px #aaaaaa; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ui.tabular.menu {
+    border-color: grey;
+}
