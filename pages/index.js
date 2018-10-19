@@ -9,7 +9,7 @@ import Layout from './../components/Layout';
 import TestContainer from './../components/TestContainer';
 */
 import ProjectSection from './../components/projectSection/ProjectSection';
-import PostSection from '../components/PostSection';
+import PostSection from '../components/postSection/PostSection';
 import VideoSection from '../components/VideoSection';
 import SocialSection from '../components/socialSection/SocialSection';
 import CooperationSection from '../components/cooperationSection/CooperationSection';

@@ -26,3 +26,7 @@ html, body {margin: 0; padding: 0; overflow-x:hidden;}
 .ui.attached.tabular.menu{
     margin: 0 auto !important;
 }
+
+.carousel .control-dots{
+    padding:0;
+}
