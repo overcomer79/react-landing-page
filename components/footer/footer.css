@@ -55,4 +55,5 @@ To use to move image on responsive page
 .footer-contact {
     display: inline-flex;
     align-items: center;
+    text-align: center !important;
 }

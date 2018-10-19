@@ -52,7 +52,7 @@ export default () => {
 
                             <Grid.Column>
                                 <Grid verticalAlign='middle'>
-                                    <Grid.Row columns={2}>
+                                    <Grid.Row columns={2} textAlign='center'>
                                         <Grid.Column>
                                             <div className='footer-contact'>
                                                 <span style={{ marginRight: 10 }}>Contattaci: </span>
@@ -60,7 +60,7 @@ export default () => {
                                             </div>
                                         </Grid.Column >
 
-                                        <Grid.Column textAlign='center'>
+                                        <Grid.Column>
                                             <div className='footer-contact'>
                                                 <span>Seguici su: </span>
                                                 <img className='footer-icon' src="static/images/facebook.svg"></img>

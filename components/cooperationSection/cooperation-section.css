@@ -1,0 +1,13 @@
+.cooperation-logo img:last-child {
+    display: none;  
+}
+.cooperation-logo:hover img:last-child {
+  display: inline-block;  
+}
+.cooperation-logo:hover img:first-child {
+  display: none;  
+}
+
+.cooperation-section {
+  padding-top: 30px;
+}
