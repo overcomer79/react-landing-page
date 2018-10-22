@@ -59,9 +59,7 @@ const panes = [
                             sulla scalinata munumentale del Rettorato, nel cuore della città universitaria.
                             <br /> <br />
                         </p>
-                        <Button style={{ backgroundColor: '#df2c3f' }}>
-                            <span className='button-text'> RISOLVI IL TEST </span>
-                        </Button>
+                        <Button primary> RISOLVI IL TEST </Button>
                     </div>
                 </Container>
             </Tab.Pane>

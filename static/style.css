@@ -1,10 +1,8 @@
-/*
-.extended {
-    padding: 0 !important
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
-*/
-
-html, body {margin: 0; padding: 0; overflow-x:hidden;}
 
 .section-title, .section-title:hover {
     text-decoration: none;
@@ -16,17 +14,21 @@ html, body {margin: 0; padding: 0; overflow-x:hidden;}
     letter-spacing: 2px;
 }
 
-.button-text {
-    color: white !important;
-    font-family: 'Ubuntu Mono', Fallback, sans-serif;
-    letter-spacing: 2px;
-    font-weight: 300;
-}
-
-.ui.attached.tabular.menu{
+.ui.attached.tabular.menu {
     margin: 0 auto !important;
 }
 
-.carousel .control-dots{
-    padding:0;
+.carousel .control-dots {
+    padding: 0;
+}
+
+/* OVERRIDE PRIMARY BUTTON */
+
+.ui.primary.button, .ui.primary.button:hover, .ui.primary.button:focus, .ui.primary.button:active {
+    background-color: #df2c3f;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    letter-spacing: 2px;
 }

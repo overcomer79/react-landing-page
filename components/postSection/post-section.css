@@ -1,4 +1,4 @@
-.post-content{
+.post-content {
     position: absolute;
     top: 10%;
     left: 30%;
@@ -7,5 +7,5 @@
 }
 
 .post-text {
-    padding: 30px 20%; 
+    padding: 30px 20%;
 }

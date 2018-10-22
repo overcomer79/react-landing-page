@@ -1,0 +1,26 @@
+.test-reminder-section {
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    z-index: 999;
+    border: 1px solid gray;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0 1px;
+    padding: 10px 0;
+}
+
+.test-reminder-header {
+    color: #df2c3f;
+}
+
+.test-reminder-body {
+    font-size: smaller;
+}

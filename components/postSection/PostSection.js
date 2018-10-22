@@ -18,16 +18,8 @@ export default () => {
             showStatus={false}
             showArrows={false}
             showThumbs={false}
+            emulateTouch={true}
         >
-            <div>
-                <img src="static/images/img_pillole.jpg" />
-                <div className='post-content'>
-                    <Header sub textAlign='center'>
-                        <a className='section-title'> PILLOLE INFORMATIVE </a>
-                    </Header>
-                    <p>TESTO 1</p>
-                </div>
-            </div>
             <div>
                 <img src="static/images/img_pillole.jpg" />
                 <div className='post-content'>
@@ -38,6 +30,17 @@ export default () => {
                         "Se hai avuto un rapporto ad alto rischio di contagio HIV rivolgiti <br />
                         ad un centro di Malattie Infettive entro 48-73 ore: puoi fare una terapia preventiva <br />
                         se indicato ed evitare di contrarre il virus"
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="static/images/img_pillole.jpg" />
+                <div className='post-content'>
+                    <Header sub textAlign='center'>
+                        <a className='section-title'> PILLOLE INFORMATIVE </a>
+                    </Header>
+                    <p className='post-text'>
+                       TEST 2
                     </p>
                 </div>
             </div>

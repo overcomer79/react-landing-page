@@ -14,44 +14,22 @@ import VideoSection from '../components/VideoSection';
 import SocialSection from '../components/socialSection/SocialSection';
 import CooperationSection from '../components/cooperationSection/CooperationSection';
 import LinkSection from '../components/linkSection/LinkSection';
+import ModalComponent from '../components/modalComponent/ModalComponent';
+import TestReminder from '../components/testReminder/TestReminder'
 
 class Landing extends Component {
-
-    async componentDidMount() {
-        console.log("ECCHIME");
-    }
 
     render() {
         return (
             <div>
                 <Layout>
+                    <ModalComponent></ModalComponent>
                     <ProjectSection></ProjectSection>
                     <VideoSection></VideoSection>
                     <PostSection></PostSection>
                     <CooperationSection></CooperationSection>
                     <LinkSection></LinkSection>
-                    <Grid>
-                        {/* <Grid.Row>
-                            <Grid.Column>
-                                <TestContainer></TestContainer>
-                            </Grid.Column>
-                        </Grid.Row> */}
-                        <Grid.Row>
-                            <Grid.Column>
-                                
-                            </Grid.Column>
-                        </Grid.Row>
-                        <Grid.Row>
-                            <Grid.Column>
-                                
-                            </Grid.Column>
-                        </Grid.Row>
-                        {/* <Grid.Row>
-                            <Grid.Column className='extended'>
-                                <SocialSection></SocialSection>
-                            </Grid.Column>
-                        </Grid.Row> */}
-                    </Grid>
+                    <TestReminder></TestReminder>
                 </Layout>
             </div>
         );
