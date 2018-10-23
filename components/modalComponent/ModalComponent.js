@@ -9,11 +9,14 @@ import {
 
 import './modal-component.css';
 
+const delay = ms => new Promise(res => setTimeout(res, ms));
+    
 class ModalComponent extends Component {
     state = { open: false }
 
-    componentDidMount() {
-        this.setState({ open: true })
+    async componentDidMount() {
+        await delay(5000);
+        this.setState({ open: true });
     }
 
     onClose = () => {
