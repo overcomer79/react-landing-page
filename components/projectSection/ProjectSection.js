@@ -19,28 +19,34 @@ class ProjectSection extends Component {
         goToAnchor('project', true)
         */
         return (
-            <div style={{ paddingTop: 30 }}>
+            <div>
+                <a className="anchor" id="project-section" />
+                <div style={{ paddingTop: 30 }}>
 
-                <Container style={{ paddingBottom: 40 }}>
-                    {/* <ScrollableAnchor id={'project'} > */}
-                    <Header sub textAlign='center'>
-                        <a className='section-title'>IL PROGETTO </a>
-                    </Header>
-                    {/* </ScrollableAnchor> */}
-                    <Header className='project-title' size='huge'>Amare con sapienza</Header>
 
-                    <p>
-                        Amare con Sapienza è <b>un'iniziativa a cura del Dipartimento di Malattie Infettive
-                        e Sanità Pubblica dell'Università Sapienza.</b></p>
-                    <p>
-                        L'obiettivo del progetto, <b>vincitore delbando Digital Health 2017</b>,
-                        è valutare l'efficacia di digital ambient media nella prevenzione dell'infezione da HIV.
+                    <Container style={{ paddingBottom: 40 }}>
+                        {/* <ScrollableAnchor id={'project'} > */}
+                        <Header sub textAlign='center'>
+                            <a className='section-title'>IL PROGETTO </a>
+                        </Header>
+                        {/* </ScrollableAnchor> */}
+                        <Header className='project-title' size='huge'>Amare con sapienza</Header>
+
+                        <p>
+                            Amare con Sapienza è un'iniziativa a cura del <b> Dipartimento di Malattie Infettive
+                        e Sanità Pubblica</b> dell'Università Sapienza.</p>
+                        <p>
+                            L'obiettivo del progetto, <b>vincitore del bando Digital Health 2017</b>,
+                            è valutare l'efficacia di digital ambient media nella prevenzione dell'infezione da HIV.
                     </p>
-                </Container>
+                    </Container>
 
-                <TabComponent></TabComponent>
+                    <TabComponent></TabComponent>
+
+                </div>
 
             </div>
+
         );
     }
 }

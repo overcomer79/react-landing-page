@@ -33,7 +33,6 @@ class Header extends Component {
         else {
             this.setState({ image: 'static/images/ribbon.png' });
         }
-
     }
 
     render() {
@@ -45,17 +44,25 @@ class Header extends Component {
                             <Image src={this.state.image} className='header-logo'></Image>
                         </Menu.Item>
                         <Menu.Menu position="right">
-                            <Menu.Item>risolvi il test</Menu.Item>
                             <Menu.Item>
-                                <a href='#project'>il progetto</a>
+                                <a href='#'>gioca</a>
                             </Menu.Item>
-                            <Menu.Item>l'installazione</Menu.Item>
-                            <Menu.Item>pillole informative</Menu.Item>
-                            <Menu.Item>chi siamo</Menu.Item>
+                            <Menu.Item>
+                                <a href='#project-section'>il progetto</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href='#video-section'>l'installazione</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href='#post-section'>pillole informative</a>
+                            </Menu.Item>
+                            <Menu.Item>
+                                <a href='#cooperation-section'>chi siamo</a>
+                            </Menu.Item>
                         </Menu.Menu>
                     </Container>
                 </Menu>
-                <Image src='static/images/animazione_header.gif' fuild="true" alt="Header"></Image>
+                <Image src='static/images/animazione_header.gif' style={{ width: '100%' }} />
             </div>
         );
     }

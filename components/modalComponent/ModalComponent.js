@@ -48,11 +48,10 @@ class ModalComponent extends Component {
                                     Hai appena contratto il virus dell'informazione!
                                 </div>
                                 <p className='modal-content'> 
-                                    Diffondilo e anima l'installazione collocata
-                                    sulla scalinata principale dell'Ateneo
-                                    seguendo le nostre indicazioni.
+                                    Diffondilo e anima l’installazione collocata sulla scalinata 
+                                    del rettorato della Sapienza seguendo le indicazioni.
                                 </p>
-                                <Button primary> RISOLVI IL TEST </Button>
+                                <Button primary> INIZIA IL GIOCO </Button>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

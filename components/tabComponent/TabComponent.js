@@ -52,16 +52,21 @@ const panes = [
                 <Container>
                     <div className="tab-content">
                         <p>
-                            Clicca sul tasto "risolvi il test" e scegli tra uno o più quiz a disposizione. <br />
-                            Trova e inserisci le lettere mancanti e approfondisci le principali tematiche.
+                            E' Semplice! <br />
+                            Clicca su INIZIA IL GIOCO e scegli tra uno o più quiz a disposizione.
                         </p>
                         <p>
-                            In questo modeo puoi implementare il contagio dell'informazione e sbloccare un piccolo tassello per consentire
-                            una diffusione del virus. Raggiungi il gradino più alto della conoscenza e verificane/ osserva la "reazione"
-                            sulla scalinata munumentale del Rettorato, nel cuore della città universitaria.
-                            <br /> <br />
+                            Trova e inserisci le lettere mancanti e approfondisci le principali tematiche.
+                            In questo modo raggiungi il gradino più alto della conoscenza, 
+                            implementi il contagio dell’informazione e sblocchi un piccolo tassello che consentirà 
+                            una diffusione totale del “virus buono”.
+                            Puoi verificare gli effetti del tuo operato sulla scalinata monumentale del Rettorato, 
+                            nel cuore della città universitaria, dove un’installazione si completerà gradualmente 
+                            interagendo con ogni utente.
+                            Soltanto una corretta informazione trasformerà il virus in virtù.
+                        <br /> <br />
                         </p>
-                        <Button primary> RISOLVI IL TEST </Button>
+                        <Button primary> INIZIA IL GIOCO </Button>
                     </div>
                 </Container>
             </Tab.Pane>
@@ -70,7 +75,7 @@ const panes = [
 
 
 class TabComponent extends Component {
-    state = { activeIndex: 1 }
+    state = { activeIndex: 0 }
 
     handleTabChange = (e, { activeIndex }) => {
         this.setState({ activeIndex });
@@ -78,11 +83,9 @@ class TabComponent extends Component {
 
     render() {
         const { activeIndex } = this.state;
-
         return (
             <Tab activeIndex={activeIndex} panes={panes} onTabChange={this.handleTabChange} />
         );
-
     }
 }
 

@@ -8,6 +8,28 @@
   display: none;  
 }
 
+.cooperation-logo img {
+  width: 150px;
+  height: auto;
+  font-size: .92857143rem;
+}
+
 .cooperation-section {
   padding-top: 30px;
+  text-align: center;
+}
+
+.cooperation-logo-desc {
+  color: #bbbbbb;
+  font-size: small;
+}
+
+.cooperation-separator {
+  padding-top: 31px;
+}
+
+@media only screen and (max-width: 767px) {
+  .cooperation-separator {
+    padding-top: 0;
+  }
 }

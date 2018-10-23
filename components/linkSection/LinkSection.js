@@ -21,27 +21,50 @@ export default () => {
                 <Grid textAlign='center'>
                     <Grid.Row columns={3}>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> Start talkinking.Stop HIV. </a>
+                            <a
+                                href='https://www.cdc.gov/actagainstaids/campaigns/starttalking/index.html'
+                                target='_blank'
+                            >
+                                <Icon name='linkify' /> 
+                                Start talkinking.Stop HIV.
+                            </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> Salute.gov.it/FAQ - Hiv e Aids </a>
+                            <a
+                                href='http://www.salute.gov.it/portale/p5_1_1.jsp?lingua=italiano&id=164'
+                                target='_blank'
+                            >
+                                <Icon name='linkify' /> 
+                                Salute.gov.it/FAQ - Hiv e Aids
+                            </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> worldiadsday.org </a>
+                            <a
+                                href='https://www.worldaidsday.org'
+                                target='_blank'
+                            >
+                                <Icon name='linkify' /> 
+                                worldiadsday.org
+                            </a>
                         </GridColumn>
                     </Grid.Row>
                     <Grid.Row columns={4}>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> nadironlus.org </a>
+                            <a 
+                                href='#'
+                            >
+                                <Icon name='linkify' /> 
+                                nadironlus.org 
+                            </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> lila.it </a>
+                            <a href='#'><Icon name='linkify' /> lila.it </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> plus-onlus.it </a>
+                            <a href='#'><Icon name='linkify' /> plus-onlus.it </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify'/> uniticontrolaids.it </a>
+                            <a href='#'><Icon name='linkify' /> uniticontrolaids.it </a>
                         </GridColumn>
                     </Grid.Row>
                 </Grid>

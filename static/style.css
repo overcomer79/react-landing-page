@@ -14,8 +14,11 @@ html, body {
     letter-spacing: 2px;
 }
 
-.ui.attached.tabular.menu {
-    margin: 0 auto !important;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
 }
 
 .carousel .control-dots {
@@ -23,6 +26,14 @@ html, body {
 }
 
 /* OVERRIDE SEMANTIC UI REACT SECTION */
+
+a {
+    color: #bbbbbb;
+}
+
+a:hover {
+    color: #23226b;
+}
 
 .ui.primary.button, .ui.primary.button:hover, .ui.primary.button:focus, .ui.primary.button:active {
     background-color: #df2c3f;
@@ -68,6 +79,15 @@ html, body {
 }
 
 .ui.attached.tabular.menu {
+    margin: 0 auto !important;
     margin-left: auto!important;
     margin-right: auto!important;
+}
+
+.ui.menu .item>a:not(.ui) {
+    color: #23226b;
+}
+
+.ui.menu .item>a:not(.ui):hover, .ui.menu .item>a:not(.ui):active {
+    color: #df2c3f;
 }
