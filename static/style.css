@@ -22,7 +22,7 @@ html, body {
     padding: 0;
 }
 
-/* OVERRIDE PRIMARY BUTTON */
+/* OVERRIDE SEMANTIC UI REACT SECTION */
 
 .ui.primary.button, .ui.primary.button:hover, .ui.primary.button:focus, .ui.primary.button:active {
     background-color: #df2c3f;
@@ -31,4 +31,14 @@ html, body {
     background-image: none;
     font-family: 'Ubuntu Mono', Fallback, sans-serif;
     letter-spacing: 2px;
+}
+
+.ui.mini.modal {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.dimmed.dimmable>.ui.animating.dimmer, .dimmed.dimmable>.ui.visible.dimmer, .ui.active.dimmer {
+    background-color: rgba(35, 34, 107, 0.8)
 }

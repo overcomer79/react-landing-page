@@ -31,14 +31,15 @@ class ModalComponent extends Component {
                 closeIcon
                 onClose={this.onClose}
                 closeOnPortalMouseLeave={false}
+                className='modal'
             >
-                <Modal.Content>
+                <Modal.Content style={{padding:'1.5rem'}}>
                     <Grid>
                         <Grid.Row columns='two'>
-                            <Grid.Column width={3}>
-                                <Image src='static/images/sample_img.png' size='tiny' />
+                            <Grid.Column width={4}>
+                                <Image src='static/images/icona_pop_up.png' size='small' style={{marginTop:'5px'}} />
                             </Grid.Column>
-                            <Grid.Column width={13}>
+                            <Grid.Column width={12}>
                                 <div className='modal-header'>
                                     Complimenti! < br />
                                     Hai appena contratto il virus dell'informazione!

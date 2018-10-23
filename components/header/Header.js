@@ -28,7 +28,7 @@ class Header extends Component {
         const bound = scrollWidth / 1.77 - 70;
 
         if (parseInt(scrollTop) > bound) {
-            this.setState({ image: 'static/images/sample_img.png' });
+            this.setState({ image: 'static/images/Ribbon_logo.png' });
         }
         else {
             this.setState({ image: 'static/images/ribbon.png' });
@@ -42,7 +42,7 @@ class Header extends Component {
                 <Menu secondary fixed='top' className='header-menu'>
                     <Container>
                         <Menu.Item>
-                            <Image src={this.state.image} size='mini'></Image>
+                            <Image src={this.state.image} className='header-logo'></Image>
                         </Menu.Item>
                         <Menu.Menu position="right">
                             <Menu.Item>risolvi il test</Menu.Item>
