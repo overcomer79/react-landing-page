@@ -19,7 +19,7 @@ class ProjectSection extends Component {
         goToAnchor('project', true)
         */
         return (
-            <div style={{ paddingTop: 30, backgroundColor: '#eee' }}>
+            <div style={{ paddingTop: 30 }}>
 
                 <Container style={{ paddingBottom: 40 }}>
                     {/* <ScrollableAnchor id={'project'} > */}

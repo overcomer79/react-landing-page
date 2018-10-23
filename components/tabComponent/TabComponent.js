@@ -10,9 +10,11 @@ import {
 import './tab-component.css';
 
 const panes = [
+    /*
     {
         menuItem: (<div key='none' active="false" style={{ margin: '1%' }}></div>)
     },
+    */
     {
         menuItem: (
             <Menu.Item key='Mission'>

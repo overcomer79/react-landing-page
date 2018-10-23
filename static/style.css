@@ -42,3 +42,32 @@ html, body {
 .dimmed.dimmable>.ui.animating.dimmer, .dimmed.dimmable>.ui.visible.dimmer, .ui.active.dimmer {
     background-color: rgba(35, 34, 107, 0.8)
 }
+
+@media only screen and (max-width: 767px) {
+    .ui.attached.tabular.menu {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .ui.attached.tabular.menu {
+        padding-left: calc((100% - 732px)/2);
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    .ui.attached.tabular.menu {
+        padding-left: calc((100% - 933px)/2);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ui.attached.tabular.menu {
+        padding-left: calc((100% - 1127px)/2);
+    }
+}
+
+.ui.attached.tabular.menu {
+    margin-left: auto!important;
+    margin-right: auto!important;
+}
