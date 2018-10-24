@@ -1,6 +1,7 @@
-.project-title {
-    font-weight: 400 !important;
-}
+/*
+TODO: spostare questo stile nel file di stile generico.
+*/
+
 .ui.tabular.menu .active.item {
     /*
     border-color: grey;

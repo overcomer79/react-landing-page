@@ -4,6 +4,21 @@ html, body {
     overflow-x: hidden;
 }
 
+a {
+    color: #bbbbbb;
+}
+
+a:hover {
+    color: #23226b;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+}
+
 .section-title, .section-title:hover {
     text-decoration: none;
     border-bottom-width: 1px;
@@ -14,25 +29,25 @@ html, body {
     letter-spacing: 2px;
 }
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -70px;
-    visibility: hidden;
+.section-header {
+    font-weight: 400 !important;
+    color: #23226b !important;
 }
 
 .carousel .control-dots {
     padding: 0;
 }
 
-/* OVERRIDE SEMANTIC UI REACT SECTION */
-
-a {
-    color: #bbbbbb;
+.tests-container {
+    padding: 150px 0px 150px 0px;
+    background-color: #ffcaca;
 }
 
-a:hover {
-    color: #23226b;
+/* OVERRIDE SEMANTIC UI REACT SECTION */
+
+.ui.button {
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    letter-spacing: 2px;
 }
 
 .ui.primary.button, .ui.primary.button:hover, .ui.primary.button:focus, .ui.primary.button:active {
@@ -40,8 +55,21 @@ a:hover {
     color: #fff;
     text-shadow: none;
     background-image: none;
-    font-family: 'Ubuntu Mono', Fallback, sans-serif;
-    letter-spacing: 2px;
+}
+
+.ui.basic.primary.button, .ui.basic.primary.button:focus {
+    color: #23226b !important;
+    border: #23226b 0.1px solid !important;
+    border-radius: 0;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.ui.basic.primary.button:hover, .ui.basic.primary.button:active {
+    color: #df2c3f !important;
+    border: #df2c3f 0.1px solid !important;
 }
 
 .ui.mini.modal {
