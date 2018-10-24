@@ -44,7 +44,7 @@ class Header extends Component {
                         </Menu.Menu>
                     </Container>
                 </Menu>
-                <Image src='static/images/animazione_header.gif' style={{ width: '100%' }} />
+                
             </div>
         );
     }

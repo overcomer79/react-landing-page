@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import {
-    Grid
+    Image
 } from 'semantic-ui-react';
 
 import Layout from './../components/Layout';
@@ -50,12 +50,14 @@ class Landing extends Component {
         return (
             <div>
                 <Layout down={this.state.down}>
+                    <Image src='static/images/animazione_header.gif' style={{ width: '100%' }} />
                     <ModalComponent></ModalComponent>
                     <ProjectSection></ProjectSection>
                     <VideoSection></VideoSection>
                     <PostSection></PostSection>
                     <CooperationSection></CooperationSection>
                     <LinkSection></LinkSection>
+                    <SocialSection></SocialSection>
                     <TestReminder down={this.state.down}></TestReminder>
                 </Layout>
             </div>

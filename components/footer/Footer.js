@@ -11,28 +11,7 @@ import './footer.css';
 export default () => {
     return (
         <div>
-            <Header sub textAlign='center' style={{ marginTop: 30, marginBottom: 30 }}>
-                <a className='section-title'>#AMARECONSAPIENZA </a>
-            </Header>
-            {/* <div className='footer-image-group'>
-                <a><Image src="static/images/footer/1.png" /></a>
-                <a><Image src="static/images/footer/2.png" /></a>
-                <a><Image src="static/images/footer/3.png" /></a>
-                <a><Image src="static/images/footer/4.png" /></a>
-                <a><Image src="static/images/footer/5.png" /></a>
-                <a><Image src="static/images/footer/6.png" /></a>
-                <a><Image src="static/images/footer/7.png" /></a>
-            </div> */}
 
-            <div className='footer-image-group'>
-                <Image className='footer-image' src="static/images/footer/1.png" />
-                <Image className='footer-image' src="static/images/footer/2.png" />
-                <Image className='footer-image' src="static/images/footer/3.png" />
-                <Image className='footer-image' src="static/images/footer/4.png" />
-                <Image className='footer-image' src="static/images/footer/5.png" />
-                <Image className='footer-image' src="static/images/footer/6.png" />
-                <Image className='footer-image' src="static/images/footer/7.png" />
-            </div>
 
             <div className='footer-bar'>
                 <Container>

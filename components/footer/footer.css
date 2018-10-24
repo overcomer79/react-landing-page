@@ -25,17 +25,7 @@ To use to move image on responsive page
 }
 */
 
-/* To use to left the images always on-line
-*/
-.footer-image-group {
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-}
-.footer-image {
-    width: 14.28%;
-    display: inline-block !important;
-}
+
 
 .footer-bar {
     background-color: #24226b;
