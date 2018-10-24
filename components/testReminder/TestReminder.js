@@ -10,7 +10,8 @@ import {
 import './test-reminder.css';
 
 class TestReminder extends Component {
-    render() {
+
+    renderReminder = () => {
         return (
             <div className='test-reminder-section'>
                 <Container >
@@ -18,10 +19,10 @@ class TestReminder extends Component {
                         <Grid.Row columns='two'>
                             <Grid.Column width={10}>
                                 <p className='test-reminder-header'> Complimenti! Hai appena contratto il virus dell'informazione! </p>
-                                <p className='test-reminder-body'> 
+                                <p className='test-reminder-body'>
                                     Diffondilo e anima l'installazione collocata sulla scalinata principale
                                     dell'ateneo seguendo le nostre indicazioni.
-                                </p>
+                                            </p>
                             </Grid.Column>
                             <GridColumn width={6} verticalAlign='bottom' textAlign='right'>
                                 <Button primary> RISOLVI IL TEST </Button>
@@ -30,6 +31,12 @@ class TestReminder extends Component {
                     </Grid>
                 </Container>
             </div>
+        );
+    }
+
+    render() {
+        return (
+            <div>{this.props.down ? this.renderReminder() : null}</div>
         );
     }
 }

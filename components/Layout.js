@@ -5,7 +5,10 @@ import Header from './header/Header';
 import Footer from './footer/Footer';
 
 export default (props) => {
+
+    //console.log(props.test);
     return (
+        
         <div>
             <Head>
                 <style dangerouslySetInnerHTML={{
@@ -33,9 +36,10 @@ export default (props) => {
                 />
 
             </Head>
-
-            <Header />
+            
+            <Header down={props.down}/>
             {props.children}
+            
             <Footer />
         </div>
     );

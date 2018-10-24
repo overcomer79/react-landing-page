@@ -19,17 +19,44 @@ import TestReminder from '../components/testReminder/TestReminder'
 
 class Landing extends Component {
 
+    state = {
+        down: false
+    };
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll, true);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll, true);
+    }
+
+    handleScroll = (e) => {
+        const { scrollTop, scrollWidth } = document.body;
+
+        // 1.77 rapporto w/h gif animata responsive
+        // 70 header h
+        const bound = scrollWidth / 1.77 - 70;
+
+        if (parseInt(scrollTop) > bound) {
+            this.setState({ down: true });
+        }
+        else {
+            this.setState({ down: false });
+        }
+    }
+
     render() {
         return (
             <div>
-                <Layout>
+                <Layout down={this.state.down}>
                     <ModalComponent></ModalComponent>
                     <ProjectSection></ProjectSection>
                     <VideoSection></VideoSection>
                     <PostSection></PostSection>
                     <CooperationSection></CooperationSection>
                     <LinkSection></LinkSection>
-                    <TestReminder></TestReminder>
+                    <TestReminder down={this.state.down}></TestReminder>
                 </Layout>
             </div>
         );
