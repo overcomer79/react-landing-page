@@ -10,8 +10,8 @@ import './header.css';
 class Header extends Component {
 
     getImageSrc = (pos) => {
-        if (pos) return 'static/images/Ribbon_logo.png';
-        else return 'static/images/ribbon.png';
+        if (pos) return '/static/images/Ribbon_logo.png';
+        else return '/static/images/ribbon.png';
     }
 
     render() {

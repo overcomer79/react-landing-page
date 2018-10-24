@@ -39,7 +39,9 @@ To use to move image on responsive page
 }
 
 .footer-icon {
+    width: 100%;
     max-width: 40px;
+    min-width: 20px;
 }
 
 .footer-contact {

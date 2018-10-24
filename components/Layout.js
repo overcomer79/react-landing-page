@@ -32,7 +32,7 @@ export default (props) => {
                 />
                 <link
                     rel="stylesheet"
-                    href="static/style.css"
+                    href="/static/style.css"
                 />
 
             </Head>

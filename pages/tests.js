@@ -16,13 +16,13 @@ class Test extends Component {
                         <Header className='section-header' size='huge'>Completa la tua informazione</Header>
                         <p>Seleziona e approfondisci una o più tematiche</p>
                         <div>
-                            <Button primary basic> CONDOM </Button>
-                            <Button primary basic> PEP </Button>
-                            <Button primary basic> PREP </Button>
+                            <Button primary basic> play CONDOM </Button>
+                            <Button primary basic> play PEP </Button>
+                            <Button primary basic> play PREP </Button>
                         </div>
                         <div>
-                            <Button primary basic> TERAPIA </Button>
-                            <Button primary basic> TEST HIV </Button>
+                            <Button primary basic> play TERAPIA </Button>
+                            <Button primary basic> play TEST HIV </Button>
                         </div>         
                     </Container>
 
