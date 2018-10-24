@@ -21,8 +21,8 @@ class Test extends Component {
                             <Button primary basic> play PREP </Button>
                         </div>
                         <div>
-                            <Button primary basic> play TERAPIA </Button>
-                            <Button primary basic> play TEST HIV </Button>
+                            <Button primary basic> play TERAPY </Button>
+                            <Button primary basic> play HIV TEST </Button>
                         </div>         
                     </Container>
 
