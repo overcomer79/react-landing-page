@@ -5,8 +5,6 @@ import Header from './header/Header';
 import Footer from './footer/Footer';
 
 export default (props) => {
-
-    //console.log(props.test);
     return (
         
         <div>
@@ -34,12 +32,10 @@ export default (props) => {
                     rel="stylesheet"
                     href="/static/style.css"
                 />
-
             </Head>
             
             <Header down={props.down}/>
-            {props.children}
-            
+            {props.children}         
             <Footer />
         </div>
     );

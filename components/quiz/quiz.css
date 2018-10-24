@@ -1,0 +1,27 @@
+.quiz-area {
+    padding-top: 60px;
+    font-size: 100px;
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    color: #23226b;
+}
+
+.quiz-text {
+    margin-top: 40px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    line-height: 100px;
+}
+
+.quiz-input {
+    margin-top: 40px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px #df2c3f solid;
+    height: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: 'Ubuntu Mono', Fallback, sans-serif;
+    color: #23226b;
+}
