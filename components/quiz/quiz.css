@@ -27,10 +27,14 @@
     padding-right: 0;
     margin-right: 15px;
     font-family: 'Ubuntu Mono', Fallback, sans-serif;
-    color: #aaaaaa;
+    color: #df2c3f;
 }
 
 .quiz-input:disabled {
-    
+    border: none;
+    color: #575757;
+}
+
+.quiz-done {
     color: #23226b;
 }
