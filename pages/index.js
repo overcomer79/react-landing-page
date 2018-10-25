@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+import SimpleStorage from 'react-simple-storage';
+import "babel-polyfill"; // needed for using local storage in I.E.
+
+import { Router } from '../routes';
+
 import {
     Image
 } from 'semantic-ui-react';
@@ -20,15 +25,29 @@ import TestReminder from '../components/testReminder/TestReminder'
 class Landing extends Component {
 
     state = {
-        down: false
+        down: false,
+        isTestView: false
     };
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, true);
+
+        // This avoid to refresh the page on click of every link
+        document.querySelectorAll("a[href^='/']").forEach(node => {
+            node.addEventListener('click', e => {
+                e.preventDefault();
+                Router.pushRoute(e.target.href);
+            });
+        })
+
     }
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll, true);
+    }
+
+    onClickForTest = (e) => {
+        this.setState({ isTestView: true });
     }
 
     handleScroll = (e) => {
@@ -49,16 +68,25 @@ class Landing extends Component {
     render() {
         return (
             <div>
-                <Layout down={this.state.down}>
+                <SimpleStorage parent={this} />
+                <Layout
+                    down={this.state.down}
+                    onClickForTest={this.onClickForTest}
+                >
                     <Image src='static/images/animazione_header.gif' style={{ width: '100%' }} />
-                    <ModalComponent></ModalComponent>
+                    <ModalComponent
+                        toShow={!this.state.isTestView}
+                    />
                     <ProjectSection></ProjectSection>
                     <VideoSection></VideoSection>
                     <PostSection></PostSection>
                     <CooperationSection></CooperationSection>
                     <LinkSection></LinkSection>
                     <SocialSection></SocialSection>
-                    <TestReminder down={this.state.down}></TestReminder>
+                    <TestReminder
+                        down={this.state.down}
+                        toShow={!this.state.isTestView}
+                    />
                 </Layout>
             </div>
         );

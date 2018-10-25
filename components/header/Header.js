@@ -27,26 +27,28 @@ class Header extends Component {
                                 />
                             </a>
                         </Menu.Item>
-                        <Menu.Menu position="right">
-                            <Menu.Item>
-                                <a href='/tests'>gioca</a>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <a href='/#project-section'>il progetto</a>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <a href='/#video-section'>l'installazione</a>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <a href='/#post-section'>pillole informative</a>
-                            </Menu.Item>
-                            <Menu.Item>
-                                <a href='/#cooperation-section'>chi siamo</a>
-                            </Menu.Item>
-                        </Menu.Menu>
+                    <Menu.Menu position="right">
+                        <Menu.Item>
+                            <a
+                                href='/tests'
+                                onClick={this.props.onClickForTest}>gioca</a>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <a href='/#project-section'>il progetto</a>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <a href='/#video-section'>l'installazione</a>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <a href='/#post-section'>pillole informative</a>
+                        </Menu.Item>
+                        <Menu.Item>
+                            <a href='/#cooperation-section'>chi siamo</a>
+                        </Menu.Item>
+                    </Menu.Menu>
                     </Container>
                 </Menu>
-            </div>
+            </div >
         );
     }
 }

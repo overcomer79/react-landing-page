@@ -36,7 +36,7 @@ class TestReminder extends Component {
 
     render() {
         return (
-            <div>{this.props.down ? this.renderReminder() : null}</div>
+            <div>{(this.props.down && this.props.toShow) ? this.renderReminder() : null}</div>
         );
     }
 }

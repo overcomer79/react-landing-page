@@ -6,7 +6,6 @@ import Footer from './footer/Footer';
 
 export default (props) => {
     return (
-        
         <div>
             <Head>
                 <style dangerouslySetInnerHTML={{
@@ -33,9 +32,12 @@ export default (props) => {
                     href="/static/style.css"
                 />
             </Head>
-            
-            <Header down={props.down}/>
-            {props.children}         
+
+            <Header
+                down={props.down}
+                onClickForTest={props.onClickForTest}
+            />
+            {props.children}
             <Footer />
         </div>
     );
