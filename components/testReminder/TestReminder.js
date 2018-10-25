@@ -18,14 +18,18 @@ class TestReminder extends Component {
                     <Grid>
                         <Grid.Row columns='two'>
                             <Grid.Column width={10}>
-                                <p className='test-reminder-header'> Complimenti! Hai appena contratto il virus dell'informazione! </p>
+                                <p className='test-reminder-header'> 
+                                    Complimenti! Hai appena contratto il virus dell'informazione! 
+                                </p>
                                 <p className='test-reminder-body'>
                                     Diffondilo e anima l'installazione collocata sulla scalinata principale
                                     dell'ateneo seguendo le nostre indicazioni.
-                                            </p>
+                                </p>
                             </Grid.Column>
                             <GridColumn width={6} verticalAlign='bottom' textAlign='right'>
-                                <Button primary> RISOLVI IL TEST </Button>
+                                <a href='/tests' onClick={this.props.onClickForTest}>
+                                    <Button primary> INIZIA IL GIOCO </Button>
+                                </a>
                             </GridColumn>
                         </Grid.Row>
                     </Grid>

@@ -17,7 +17,7 @@ class ProjectSection extends Component {
 
                     <Container style={{ paddingBottom: 40 }}>
                         <Header sub textAlign='center'>
-                            <a className='section-title'>IL PROGETTO </a>
+                            <a className='section-title red'>IL PROGETTO </a>
                         </Header>
                         <Header className='section-header' size='huge'>Amare con sapienza</Header>
 
@@ -27,10 +27,10 @@ class ProjectSection extends Component {
                         <p>
                             L'obiettivo del progetto, <b>vincitore del bando Digital Health 2017</b>,
                             è valutare l'efficacia di digital ambient media nella prevenzione dell'infezione da HIV.
-                    </p>
+                        </p>
                     </Container>
-                    
-                    <TabComponent></TabComponent>
+
+                    <TabComponent onClickForTest={this.props.onClickForTest} />
                 </div>
             </div>
         );

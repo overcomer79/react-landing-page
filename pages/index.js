@@ -43,8 +43,10 @@ class Landing extends Component {
                     Router.pushRoute('/');
                 }
             });
-        })
+        });
 
+        // call the function in order to configure state on click on link
+        this.handleScroll();
     }
 
     componentWillUnmount() {
@@ -83,15 +85,20 @@ class Landing extends Component {
                         toShow={!this.state.isTestView}
                         onClickForTest={this.onClickForTest}
                     />
-                    <ProjectSection></ProjectSection>
+                    <ProjectSection
+                        onClickForTest={this.onClickForTest}
+                    />
                     <VideoSection></VideoSection>
-                    <PostSection></PostSection>
+                    <PostSection
+                        onClickForTest={this.onClickForTest}
+                    />
                     <CooperationSection></CooperationSection>
                     <LinkSection></LinkSection>
                     <SocialSection></SocialSection>
                     <TestReminder
                         down={this.state.down}
                         toShow={!this.state.isTestView}
+                        onClickForTest={this.onClickForTest}
                     />
                 </Layout>
             </div>
