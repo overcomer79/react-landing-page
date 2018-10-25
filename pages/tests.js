@@ -16,16 +16,25 @@ class Test extends Component {
                         <Header className='section-header' size='huge'>Completa la tua informazione</Header>
                         <p>Seleziona e approfondisci una o più tematiche</p>
                         <div>
-                            <Button primary basic> play CONDOM </Button>                         
-                            <Button primary basic> play PEP </Button>
-                            <Button primary basic> play PREP </Button>
+                            <a href='\tests\condom'>
+                                <Button primary basic> play CONDOM </Button>
+                            </a>
+                            <a href='\tests\pep'>
+                                <Button primary basic> play PEP </Button>
+                            </a>
+                            <a href='\tests\prep'>
+                                <Button primary basic> play PREP </Button>
+                            </a>
                         </div>
                         <div>
-                            <Button primary basic> play TERAPY </Button>
-                            <Button primary basic> play HIV TEST </Button>
-                        </div>         
+                            <a href='\tests\terapy'>
+                                <Button primary basic> play TERAPY </Button>
+                            </a>
+                            <a href='\tests\hivtest'>
+                                <Button primary basic> play HIV TEST </Button>
+                            </a>
+                        </div>
                     </Container>
-
                 </div>
             </Layout>
         );

@@ -43,6 +43,9 @@ a.anchor {
     background-color: #ffcaca;
 }
 
+.video-container {
+    margin: 5%;
+}
 /* OVERRIDE SEMANTIC UI REACT SECTION */
 
 .ui.button {

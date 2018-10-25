@@ -5,16 +5,16 @@ import Quiz from '../../components/quiz/Quiz';
 
 class Condom extends Component {
 
-    hint = `Il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
-            dall'inizio del rapporto, per tutta la sua durata e se non si rompe.`;
+    hint = `Nelle strutture pubbliche il test dell’HIV è sempre gratuito e confidenziale. 
+            Il test salivare può essere acquistato anche in farmacia.`;
     
-    textPreInput = 'NON ROMPETEMI I';
-    textPreInput2 = 'CO';
+    textPreInput = 'HAI';
+    textPreInput2 = '';
     
-    textPostInput = '';
-    textPostInput2 = '';
+    textPostInput = 'RATO';
+    textPostInput2 = 'IL TEST?';
 
-    solution = ['N','D','O','M'];
+    solution = ['C','O','M','P'];
 
     render() {
         return (

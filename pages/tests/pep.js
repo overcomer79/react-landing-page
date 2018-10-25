@@ -5,16 +5,17 @@ import Quiz from '../../components/quiz/Quiz';
 
 class Condom extends Component {
 
-    hint = `Il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
-            dall'inizio del rapporto, per tutta la sua durata e se non si rompe.`;
+    hint = `La Profilassi Post-Esposizione (PEP) prevede l’utilizzo di farmaci 
+            anti-HIV subito dopo (entro 24-48 ore) un comportamento 
+            a rischio per evitare di contrarre il virus.`;
     
-    textPreInput = 'NON ROMPETEMI I';
-    textPreInput2 = 'CO';
+    textPreInput = 'TUTTO A';
+    textPreInput2 = '';
     
-    textPostInput = '';
+    textPostInput = 'ST';
     textPostInput2 = '';
 
-    solution = ['N','D','O','M'];
+    solution = ['P','O'];
 
     render() {
         return (

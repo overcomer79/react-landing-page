@@ -5,16 +5,17 @@ import Quiz from '../../components/quiz/Quiz';
 
 class Condom extends Component {
 
-    hint = `Il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
-            dall'inizio del rapporto, per tutta la sua durata e se non si rompe.`;
+    hint = `La Profilassi Pre-Esposizione (PreP) è efficace 
+            e indicata nelle persone che hanno rapporti con più partner 
+            e prevede l’utilizzo di farmaci anti-HIV prima di un comportamento a rischio.`;
     
-    textPreInput = 'NON ROMPETEMI I';
-    textPreInput2 = 'CO';
+    textPreInput = 'MI SONO INNAMORATO DI';
+    textPreInput2 = 'T';
     
-    textPostInput = '';
+    textPostInput = 'E';
     textPostInput2 = '';
 
-    solution = ['N','D','O','M'];
+    solution = ['R'];
 
     render() {
         return (

@@ -18,7 +18,10 @@ class Quiz extends Component {
     }
 
     componentDidMount() {
-        this.refs.quiz_input_0.focus();
+        try {
+            this.refs.quiz_input_0.focus();
+        }
+        catch{ }
     }
 
     onChangeHandler = (event, index) => {
@@ -34,23 +37,48 @@ class Quiz extends Component {
     }
 
     onkeyUpHandler = (event, index) => {
-        if (event.keyCode !== 8) {
-            event.target.nextSibling.focus();
+        let myTarget = event.target;
+        // If the user press backspace or shift
+        // do not move the focus to the next cell
+        if (
+            event.keyCode !== 8 &&
+            event.keyCode !== 16
+        ) {
+            // Find the next cell not disabled (exact)
+            while (myTarget.nextSibling.disabled) {
+                myTarget = myTarget.nextSibling;
+            }
+            myTarget.nextSibling.focus();
+        }
+        else if (
+            // If the user press backspace and the cell is empty
+            // focus on the previous cell
+            event.keyCode === 8 &&
+            (
+                event.target.value === '' ||
+                event.target.value === null ||
+                event.target.value === undefined
+            )
+        ) {
+            // Find the next cell not disabled (exact)
+            while (myTarget.previousSibling.disabled) {
+                myTarget = myTarget.previousSibling;
+            }
+            myTarget.previousSibling.focus();
         }
 
         const exacts = JSON.parse(JSON.stringify(this.state.exacts));
-
         if (event.target.value === this.props.solution[index]) {
             exacts[index] = true;
             this.setState({ exacts });
         }
 
+        // Find solution?
         let solved = exacts.filter(x => x).length;
         if (solved === this.props.solution.length) {
             this.setState({ won: true });
         }
     }
-
 
     renderInputs = () => {
         return this.props.solution.map((el, index) => {
@@ -69,11 +97,12 @@ class Quiz extends Component {
     };
 
     renderButton() {
-        console.log(this.state);
         return (
             <div>
                 <Button primary basic disabled={!this.state.won}> CONTINUA IL GIOCO </Button>
-                <Button primary basic> ESCI DAL GIOCO </Button>
+                <a href='/#project-section'>
+                    <Button primary basic> ESCI DAL GIOCO </Button>
+                </a>
             </div>
         );
     }

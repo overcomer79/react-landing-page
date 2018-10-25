@@ -5,16 +5,15 @@ import Quiz from '../../components/quiz/Quiz';
 
 class Condom extends Component {
 
-    hint = `Il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
-            dall'inizio del rapporto, per tutta la sua durata e se non si rompe.`;
+    hint = `Anche se risulti positivo non sei infettivo.`;
     
-    textPreInput = 'NON ROMPETEMI I';
-    textPreInput2 = 'CO';
+    textPreInput = '';
+    textPreInput2 = '';
     
     textPostInput = '';
     textPostInput2 = '';
 
-    solution = ['N','D','O','M'];
+    solution = [];
 
     render() {
         return (
