@@ -50,7 +50,14 @@ a.anchor {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.red {
+    color: #df2c3f;
+}
 /* OVERRIDE SEMANTIC UI REACT SECTION */
+.carousel.carousel-slider {
+    height: calc(100vw * 493 /1440);
+}
 
 .ui.button {
     font-family: 'Ubuntu Mono', Fallback, sans-serif;

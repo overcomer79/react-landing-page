@@ -22,7 +22,7 @@ export default () => {
                 showThumbs={false}
                 emulateTouch={true}
             >
-                <div id='post-section'>
+                <div>
                     <img src="static/images/img_pillole.jpg" />
                     <div className='post-content'>
                         <Header sub textAlign='center'>
@@ -52,7 +52,7 @@ export default () => {
                         <Header sub textAlign='center'>
                             <a className='section-title'> PILLOLE INFORMATIVE </a>
                         </Header>
-                        <p>TESTO 3</p>
+                        <p className='post-text'>TESTO 3</p>
                     </div>
                 </div>
             </Carousel>

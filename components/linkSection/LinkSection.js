@@ -15,7 +15,7 @@ export default () => {
     return (
         <div>
             <Header sub textAlign='center' style={{ marginTop: 30, marginBottom: 30 }}>
-                <a className='section-title'> LINK UTILI </a>
+                <a className='section-title red'> LINK UTILI </a>
             </Header>
             <Container>
                 <Grid textAlign='center'>

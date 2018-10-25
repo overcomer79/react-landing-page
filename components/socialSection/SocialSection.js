@@ -33,7 +33,7 @@ export default () => {
 
         <div>
             <Header sub textAlign='center' style={{ marginTop: 30, marginBottom: 30 }}>
-                <a className='section-title'>#AMARECONSAPIENZA </a>
+                <a className='section-title red'>#AMARECONSAPIENZA </a>
             </Header>
 
             <div className='footer-image-group'>

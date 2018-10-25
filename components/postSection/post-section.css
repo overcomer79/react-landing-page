@@ -7,5 +7,8 @@
 }
 
 .post-text {
-    padding: 30px 20%;
+    padding: 7vw 10vw;
+    font-size: 1.8vw;
+    line-height: 4vw;
+    font-weight: 300;
 }
