@@ -99,7 +99,9 @@ class Quiz extends Component {
     renderButton() {
         return (
             <div>
-                <Button primary basic disabled={!this.state.won}> CONTINUA IL GIOCO </Button>
+                <a href='/congrats'>
+                    <Button primary basic disabled={!this.state.won}> CONTINUA IL GIOCO </Button>
+                </a>
                 <a href='/#project-section'>
                     <Button primary basic> ESCI DAL GIOCO </Button>
                 </a>

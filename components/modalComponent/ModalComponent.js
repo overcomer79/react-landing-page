@@ -52,7 +52,9 @@ class ModalComponent extends Component {
                                     Diffondilo e anima l’installazione collocata sulla scalinata
                                     del rettorato della Sapienza seguendo le indicazioni.
                                     </p>
-                                <Button primary> INIZIA IL GIOCO </Button>
+                                <a href='/tests' onClick={this.props.onClickForTest}>
+                                    <Button primary> INIZIA IL GIOCO </Button>
+                                </a>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>

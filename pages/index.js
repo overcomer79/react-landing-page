@@ -36,7 +36,12 @@ class Landing extends Component {
         document.querySelectorAll("a[href^='/']").forEach(node => {
             node.addEventListener('click', e => {
                 e.preventDefault();
-                Router.pushRoute(e.target.href);
+                try {
+                    Router.pushRoute(e.target.href);
+                }
+                catch {
+                    Router.pushRoute('/');
+                }
             });
         })
 
@@ -55,7 +60,7 @@ class Landing extends Component {
 
         // 1.77 rapporto w/h gif animata responsive
         // 70 header h
-        const bound = scrollWidth / 1.77 - 70;
+        const bound = scrollWidth / 1.77 - 100;
 
         if (parseInt(scrollTop) > bound) {
             this.setState({ down: true });
@@ -76,6 +81,7 @@ class Landing extends Component {
                     <Image src='static/images/animazione_header.gif' style={{ width: '100%' }} />
                     <ModalComponent
                         toShow={!this.state.isTestView}
+                        onClickForTest={this.onClickForTest}
                     />
                     <ProjectSection></ProjectSection>
                     <VideoSection></VideoSection>

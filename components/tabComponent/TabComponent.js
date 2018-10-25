@@ -75,7 +75,7 @@ const panes = [
 
 
 class TabComponent extends Component {
-    state = { activeIndex: 1 }
+    state = { activeIndex: 0 }
 
     handleTabChange = (e, { activeIndex }) => {
         this.setState({ activeIndex });

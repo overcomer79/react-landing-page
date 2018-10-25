@@ -20,14 +20,17 @@ class Congrats extends Component {
                             Hai sbloccato un nuovo tassello dell’installazione sulla scalinata monumentale. <br />
                             Grazie a te la cura è vicina ed è sotto i tuoi occhi.
                         </p>
-                        <div className='video-container'>
-                            <Embed
-                                id='O6Xo21L0ybE'
-                                brandedUI
-                                source='youtube'
-                            />
-                        </div>
                         <div style={{ textAlign: 'center' }}>
+
+                            <div className='video-container'>
+                                <Embed
+                                    id='O6Xo21L0ybE'
+                                    brandedUI
+                                    source='youtube'
+                                    size='small'
+                                />
+                            </div>
+
                             <a href='\#project-section'>
                                 <Button primary basic> SCOPRI IL PROGETTO </Button>
                             </a>
