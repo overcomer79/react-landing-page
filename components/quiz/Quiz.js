@@ -97,7 +97,7 @@ class Quiz extends Component {
     };
 
     renderSolutionLink = (won) => {
-        return won ? '\congrats' : '#';
+        return won ? '/congrats' : '#';
     } 
 
     renderButton() {
