@@ -109,6 +109,7 @@ a.anchor {
 @media only screen and (max-width: 767px) {
     .ui.attached.tabular.menu {
         width: auto;
+        padding-left: 14px !important;
     }
 }
 
