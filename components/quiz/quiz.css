@@ -8,15 +8,12 @@
 }
 
 .quiz-text {
-    margin-top: 25px;
     display: inline-block;
-    text-overflow: ellipsis;
-    overflow-wrap: break-word;
+    word-break: break-word;
     line-height: 60px;
 }
 
 .quiz-input {
-    margin-top: 25px;
     width: 30px;
     background-color: transparent;
     border: none;

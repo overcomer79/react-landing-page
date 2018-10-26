@@ -80,7 +80,7 @@ class Landing extends Component {
                     down={this.state.down}
                     onClickForTest={this.onClickForTest}
                 >
-                    <Image src='static/images/animazione_header.gif' style={{ width: '100%' }} />
+                    <Image className='header-image' src='static/images/animazione_header.gif'/>
                     <ModalComponent
                         toShow={!this.state.isTestView}
                         onClickForTest={this.onClickForTest}

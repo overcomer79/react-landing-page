@@ -7,3 +7,13 @@
 .header-logo {
     height: 50px;
 }
+
+.header-menu-secondary{
+    display: inline-flex;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-menu-secondary {
+        display: none;
+    }
+}

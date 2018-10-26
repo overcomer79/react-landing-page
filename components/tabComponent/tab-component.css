@@ -4,8 +4,7 @@
 
 .tab-title {
     font-family: 'Ubuntu Mono', Fallback, sans-serif;
-    font-size: large;
-    font-weight: 600;
-    letter-spacing: 3px;
-    margin-right: 30px;
+    font-size: 2vw;
+    letter-spacing: 1vw;
+    margin-right: 3vw;
 }

@@ -19,6 +19,16 @@ a.anchor {
     visibility: hidden;
 }
 
+.header-image {
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-image {
+        padding-top: 30px;
+    }
+}
+
 .section-title, .section-title:hover {
     text-decoration: none;
     border-bottom-width: 1px;
