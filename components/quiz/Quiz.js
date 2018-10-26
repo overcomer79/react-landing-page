@@ -96,10 +96,14 @@ class Quiz extends Component {
         })
     };
 
+    renderSolutionLink = (won) => {
+        return won ? '\congrats' : '#';
+    } 
+
     renderButton() {
         return (
             <div>
-                <a href='/congrats'>
+                <a href={this.renderSolutionLink(!!this.state.won)}>
                     <Button primary basic disabled={!this.state.won}> CONTINUA IL GIOCO </Button>
                 </a>
                 <a href='/#project-section'>

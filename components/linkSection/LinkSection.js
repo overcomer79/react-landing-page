@@ -1,7 +1,3 @@
-/**
- * TODO: Inserire i link effettivi
- */
-
 import React from 'react';
 import {
     Header,
@@ -25,7 +21,7 @@ export default () => {
                                 href='https://www.cdc.gov/actagainstaids/campaigns/starttalking/index.html'
                                 target='_blank'
                             >
-                                <Icon name='linkify' /> 
+                                <Icon name='linkify' />
                                 Start talkinking.Stop HIV.
                             </a>
                         </GridColumn>
@@ -34,7 +30,7 @@ export default () => {
                                 href='http://www.salute.gov.it/portale/p5_1_1.jsp?lingua=italiano&id=164'
                                 target='_blank'
                             >
-                                <Icon name='linkify' /> 
+                                <Icon name='linkify' />
                                 Salute.gov.it/FAQ - Hiv e Aids
                             </a>
                         </GridColumn>
@@ -43,28 +39,47 @@ export default () => {
                                 href='https://www.worldaidsday.org'
                                 target='_blank'
                             >
-                                <Icon name='linkify' /> 
+                                <Icon name='linkify' />
                                 worldiadsday.org
                             </a>
                         </GridColumn>
                     </Grid.Row>
                     <Grid.Row columns={4}>
                         <GridColumn>
-                            <a 
-                                href='#'
+                            <a
+                                href='https://www.nadironlus.org'
+                                target='_blank'
                             >
-                                <Icon name='linkify' /> 
-                                nadironlus.org 
+                                <Icon name='linkify' />
+                                nadironlus.org
                             </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify' /> lila.it </a>
+                            <a
+                                href='http://www.lila.it/it/'
+                                target='_blank'
+                            >
+                                <Icon name='linkify' />
+                                lila.it
+                            </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify' /> plus-onlus.it </a>
+                            <a 
+                                target='_blank'
+                                href='http://www.plus-onlus.it'
+                            >
+                                <Icon name='linkify' />
+                                plus-onlus.it
+                            </a>
                         </GridColumn>
                         <GridColumn>
-                            <a href='#'><Icon name='linkify' /> uniticontrolaids.it </a>
+                            <a
+                                target='_blank'
+                                href='http://www.uniticontrolaids.it'
+                            >
+                                <Icon name='linkify' />
+                                uniticontrolaids.it
+                            </a>
                         </GridColumn>
                     </Grid.Row>
                 </Grid>
