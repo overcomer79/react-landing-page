@@ -38,9 +38,11 @@ class Quiz extends Component {
 
     onkeyUpHandler = (event, index) => {
         let myTarget = event.target;
+
         // If the user press backspace or shift
         // do not move the focus to the next cell
         if (
+            event.key !== "Backspace" &&
             event.keyCode !== 8 &&
             event.keyCode !== 16
         ) {
@@ -53,7 +55,11 @@ class Quiz extends Component {
         else if (
             // If the user press backspace and the cell is empty
             // focus on the previous cell
-            event.keyCode === 8 &&
+            (
+                event.key === 'Backspace' ||
+                event.keyCode === 8
+            )
+            &&
             (
                 event.target.value === '' ||
                 event.target.value === null ||
@@ -96,9 +102,7 @@ class Quiz extends Component {
         })
     };
 
-    renderSolutionLink = (won) => {
-        return won ? '/congrats' : '#';
-    } 
+    renderSolutionLink = (won) => { return won ? '/congrats' : '#'; }
 
     renderButton() {
         return (

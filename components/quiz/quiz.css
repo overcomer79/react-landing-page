@@ -10,7 +10,7 @@
 .quiz-text {
     display: inline-block;
     word-break: break-word;
-    line-height: 60px;
+    line-height: 64px;
 }
 
 .quiz-input {
@@ -18,9 +18,8 @@
     background-color: transparent;
     border: none;
     border-bottom: 5px #df2c3f solid;
-    height: 60px;
-    padding-left: 0;
-    padding-right: 0;
+    height: 64px;
+    padding: 2px 0px;
     margin-right: 15px;
     font-family: 'Ubuntu Mono', Fallback, sans-serif;
     color: #df2c3f;

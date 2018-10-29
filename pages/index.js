@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SimpleStorage from 'react-simple-storage';
-import "babel-polyfill"; // needed for using local storage in I.E.
+//import "babel-polyfill"; // needed for using local storage in I.E.
 
 import { Router } from '../routes';
 

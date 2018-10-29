@@ -15,7 +15,7 @@ class Condom extends Component {
     textPostInput2 = 'IL TEST?';
 
     solution = ['C','O','M','P'];
-
+    
     render() {
         return (
             <Layout down={true}>
