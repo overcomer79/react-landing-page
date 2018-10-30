@@ -1,6 +1,15 @@
 import React from 'react';
 import Head from 'next/head';
 
+/**
+ * From https://github.com/zeit/next.js/tree/canary/examples/with-google-analytics
+ * 
+ */
+import Router from '../routes';
+Router.onRouteChangeComplete = url => gtag.pageview(url);
+
+import * as gtag from '../lib/gtag'
+
 import Header from './header/Header';
 import Footer from './footer/Footer';
 
@@ -40,6 +49,21 @@ export default (props) => {
                     rel="stylesheet"
                     href="/static/style.css"
                 />
+                {/* Global site tag (gtag.js) - Google Analytics  */}
+                <script
+                    async
+                    src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+                />
+                <script dangerouslySetInnerHTML={{
+                    __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', '${gtag.GA_TRACKING_ID}');`
+                }}
+                />
+
             </Head>
 
             <Header
