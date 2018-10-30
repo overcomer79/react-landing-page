@@ -22,14 +22,14 @@ class Congrats extends Component {
                         </p>
                         <div style={{ textAlign: 'center' }}>
 
-                            <div className='video-container'>
+                            {/* <div className='video-container'>
                                 <Embed
                                     id='O6Xo21L0ybE'
                                     brandedUI
                                     source='youtube'
                                     size='small'
                                 />
-                            </div>
+                            </div> */}
 
                             <a href='\#project-section'>
                                 <Button primary basic> SCOPRI IL PROGETTO </Button>

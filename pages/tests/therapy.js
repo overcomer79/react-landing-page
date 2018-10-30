@@ -3,17 +3,17 @@ import Layout from '../../components/Layout';
 
 import Quiz from '../../components/quiz/Quiz';
 
-class Condom extends Component {
+class Therapy extends Component {
 
     hint = `Anche se risulti positivo non sei infettivo.`;
     
-    textPreInput = '';
+    textPreInput = 'NON NE';
     textPreInput2 = '';
     
-    textPostInput = '';
-    textPostInput2 = '';
+    textPostInput = 'SSO';
+    textPostInput2 = "PIU'!";
 
-    solution = [];
+    solution = ['P','A'];
 
     render() {
         return (
@@ -33,4 +33,4 @@ class Condom extends Component {
     }
 }
 
-export default Condom;
+export default Therapy;

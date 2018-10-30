@@ -32,14 +32,15 @@ class TabComponent extends Component {
                         <Container>
                             <div className="tab-content">
                                 <p>
-                                    Da molto tempo è ormai possibile convivere con il virus dell'HIV
-                                    grazie a decenni di ricerche e sperimentazioni che hanno generato cure specifiche e risolutive.
+                                    Bloccare la diffusione dell’infezione da HIV <b>oggi</b> è possibile!
                                 </p>
                                 <p>
-                                    Per continuare sulla giusta strada è necessario mantenersi costantemente aggiornati, documentarsi
-                                    ed informarsi. Infatti anche l'informazione è un "virus" estremamente positivo e in questo momento si sta diffondendo
-                                    all'interno dell'Università Sapienza. Il tuo compito non è sconfiggere il virus dell'informazione ma aiutarlo a riprodursi
-                                    e a contagiare chi ti circonda: i tuoi amici, i tuoi compagni di corso, i tuoi docenti, il personale della tua Facoltà.
+                                    Molti studi dimostrano che un tipo di <b>prevenzione combinata</b> è in grado
+                                    di bloccare sensibilmente le nuove infezioni. <br />
+                                    Per fare questo è necessario mantenersi costantemente aggiornati,
+                                    documentarsi e informarsi, diffondendo il <b>virus della conoscenza!</b> <br />
+                                    Il tuo compito è aiutare questo virus a replicarsi e a contagiare chi ti circonda:
+                                    i tuoi amici, i tuoi compagni di corso, i tuoi docenti, il personale della tua facoltà.
                                 </p>
                             </div>
                         </Container>
@@ -58,17 +59,17 @@ class TabComponent extends Component {
                             <div className="tab-content">
                                 <p>
                                     E' Semplice! <br />
-                                    Clicca su INIZIA IL GIOCO e scegli tra uno o più quiz a disposizione.
+                                    Clicca su <b>INIZIA IL GIOCO</b> e scegli tra uno o più quiz a disposizione.
                                 </p>
                                 <p>
-                                    Trova e inserisci le lettere mancanti e approfondisci le principali tematiche.
+                                    Trova e inserisci le lettere mancanti e approfondisci le principali tematiche. <br />
                                     In questo modo raggiungi il gradino più alto della conoscenza,
                                     implementi il contagio dell’informazione e sblocchi un piccolo tassello che consentirà
-                                    una diffusione totale del “virus buono”.
+                                    una diffusione totale del “virus della conoscenza". <br />
                                     Puoi verificare gli effetti del tuo operato sulla scalinata monumentale del Rettorato,
                                     nel cuore della città universitaria, dove un’installazione si completerà gradualmente
                                     interagendo con ogni utente.
-                                    Soltanto una corretta informazione trasformerà il virus in virtù.
+                                    Soltanto grazie a una corretta informazione il virus sarà anche virtù.
                                 <br /> <br />
                                 </p>
                                 <a href='/tests' onClick={this.props.onClickForTest}>

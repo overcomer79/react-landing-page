@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 import Quiz from '../../components/quiz/Quiz';
 
-class Condom extends Component {
+class HIVTest extends Component {
 
     hint = `Nelle strutture pubbliche il test dell’HIV è sempre gratuito e confidenziale. 
             Il test salivare può essere acquistato anche in farmacia.`;
@@ -34,4 +34,4 @@ class Condom extends Component {
     }
 }
 
-export default Condom;
+export default HIVTest;

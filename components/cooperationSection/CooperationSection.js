@@ -25,28 +25,44 @@ export default () => {
                     <Grid.Row textAlign='center'>
                         <Grid.Column verticalAlign='middle'>
                             <p className='cooperation-logo-desc'>Progetto vincitore di:</p>
-                            <a className='cooperation-logo' href='#'>
+                            <a
+                                className='cooperation-logo'
+                                href='https://www.fellowshipgileaditalia.it/digital-health-program'
+                                target='_blank'
+                            >
                                 <img src="static/logos/digital_health.png" alt="logo digital heath" />
                                 <img src="static/logos/digital_health_colori.png" alt="logo digital heath" />
                             </a>
                         </Grid.Column>
                         <Grid.Column verticalAlign='middle'>
                             <p className='cooperation-logo-desc'>in collaborazione con:</p>
-                            <a className='cooperation-logo' href='#'>
+                            <a
+                                className='cooperation-logo'
+                                href='https://www.uniroma1.it/'
+                                target='_blank'
+                            >
                                 <img src="static/logos/Sapienza.png" alt="logo Sapienza" />
                                 <img src="static/logos/Sapienza_colori.png" alt="logo Sapienza" />
                             </a>
                         </Grid.Column>
                         <Grid.Column verticalAlign='middle'>
                             <div className='cooperation-separator'></div>
-                            <a className='cooperation-logo' href='#'>
+                            <a
+                                className='cooperation-logo'
+                                href='http://www.snapback.io/'
+                                target='_blank'
+                            >
                                 <img src="static/logos/Snapback.png" alt="logo Snapback" />
                                 <img src="static/logos/Snapback_colori.png" alt="logo Snapback" />
                             </a>
                         </Grid.Column>
                         <Grid.Column verticalAlign='middle'>
                             <div className='cooperation-separator'></div>
-                            <a className='cooperation-logo' href='#'>
+                            <a
+                                className='cooperation-logo'
+                                href='http://basilicatamakers.org/'
+                                target='_blank'
+                            >
                                 <img src="static/logos/BM.png" alt="logo Basilicata Makers" />
                                 <img src="static/logos/BM.png" alt="logo Basilicata Makers" />
                             </a>

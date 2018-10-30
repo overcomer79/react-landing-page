@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 import Quiz from '../../components/quiz/Quiz';
 
-class Condom extends Component {
+class PEP extends Component {
 
     hint = `La Profilassi Post-Esposizione (PEP) prevede l’utilizzo di farmaci 
             anti-HIV subito dopo (entro 24-48 ore) un comportamento 
@@ -35,4 +35,4 @@ class Condom extends Component {
     }
 }
 
-export default Condom;
+export default PEP;

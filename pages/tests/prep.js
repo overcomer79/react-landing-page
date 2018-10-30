@@ -3,7 +3,7 @@ import Layout from '../../components/Layout';
 
 import Quiz from '../../components/quiz/Quiz';
 
-class Condom extends Component {
+class PREP extends Component {
 
     hint = `La Profilassi Pre-Esposizione (PreP) è efficace 
             e indicata nelle persone che hanno rapporti con più partner 
@@ -35,4 +35,4 @@ class Condom extends Component {
     }
 }
 
-export default Condom;
+export default PREP;
