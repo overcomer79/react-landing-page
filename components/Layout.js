@@ -25,7 +25,6 @@ export default (props) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
                 />
-
                 <style dangerouslySetInnerHTML={{
                     __html: `
                         @font-face {
@@ -41,6 +40,8 @@ export default (props) => {
                         }                  
                         `}}
                 />
+                <link rel="shortcut icon" type="image/png/ico" href="/static/favicon.ico" />
+
                 <link
                     rel="stylesheet"
                     href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css"

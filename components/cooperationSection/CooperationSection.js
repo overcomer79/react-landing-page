@@ -1,13 +1,6 @@
-/**
- * TODO: Chiedere il logo in bianco e nero e a colori di Baslicata Makers
- * TODO: Inserire i relativi link
- */
-
 import React from 'react';
 
 import {
-    Header,
-    Image,
     Container,
     Grid,
 } from 'semantic-ui-react';
@@ -63,8 +56,8 @@ export default () => {
                                 href='http://basilicatamakers.org/'
                                 target='_blank'
                             >
-                                <img src="static/logos/BM.png" alt="logo Basilicata Makers" />
-                                <img src="static/logos/BM.png" alt="logo Basilicata Makers" />
+                                <img src="static/logos/Basilicata_makers.png" alt="logo Basilicata Makers" />
+                                <img src="static/logos/Basilicata_makers_colori.png" alt="logo Basilicata Makers" />
                             </a>
                         </Grid.Column>
 

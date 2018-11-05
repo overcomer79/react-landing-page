@@ -33,7 +33,7 @@ export default () => {
 
         <div>
             <Header sub textAlign='center' style={{ marginTop: 30, marginBottom: 30 }}>
-                <a className='section-title red'>#AMACONSAPIENZA </a>
+                <a className='section-title red'>#AMACONSAPIENZA + #HAVINGINFORMATIONVIRUS</a>
             </Header>
 
             <div className='footer-image-group'>
@@ -41,9 +41,9 @@ export default () => {
                 <Image className='footer-image' src="static/images/footer/2.png" />
                 <Image className='footer-image' src="static/images/footer/3.png" />
                 <Image className='footer-image' src="static/images/footer/4.png" />
-                <Image className='footer-image' src="static/images/footer/5.png" />
-                <Image className='footer-image' src="static/images/footer/6.png" />
-                <Image className='footer-image' src="static/images/footer/7.png" />
+                <Image className='footer-image image-mobile-hidden' src="static/images/footer/5.png" />
+                <Image className='footer-image image-mobile-hidden' src="static/images/footer/6.png" />
+                <Image className='footer-image image-mobile-hidden' src="static/images/footer/7.png" />
             </div>
         </div>
 

@@ -18,15 +18,16 @@ class Quiz extends Component {
     }
 
     componentDidMount() {
-        try {
-            this.refs.quiz_input_0.focus();
-        }
-        catch{ }
+        // try {
+        //     this.refs.quiz_input_0.focus();
+        // }
+        // catch{ }
     }
 
     onChangeHandler = (event, index) => {
         const { value } = event.target;
         const inputValues = JSON.parse(JSON.stringify(this.state.inputValues));
+
         if (value.length > 1) {
             return;
         }
