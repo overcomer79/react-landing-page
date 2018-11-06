@@ -5,15 +5,20 @@ import Quiz from '../../components/quiz/Quiz';
 
 class Therapy extends Component {
 
-    hint = `Anche se risulti positivo non sei infettivo.`;
+    hint = `La terapia anti-HIV iniziata precocemente e assunta con regolarità, 
+            blocca la replicazione del virus, la progressione verso l’AIDS e rende non contagiosi.`;
     
-    textPreInput = 'NON NE';
+            /*
+    textPreInput = 'PANE AMORE E';
     textPreInput2 = '';
     
-    textPostInput = 'SSO';
-    textPostInput2 = "PIU'!";
+    textPostInput = 'IA';
+    textPostInput2 = '';
+        */
 
-    solution = ['P','A'];
+    text = 'PANE AMORE E $$$$$IA'
+    solution = ['T','E','R','A','P'];
+    placeholder = '$';
 
     render() {
         return (
@@ -21,10 +26,8 @@ class Therapy extends Component {
                 <div className='tests-container'>
                     <Quiz
                         hint={this.hint}
-                        textPreInput={this.textPreInput}
-                        textPreInput2={this.textPreInput2}
-                        textPostInput={this.textPostInput}
-                        textPostInput2={this.textPostInput2}
+                        text={this.text}
+                        placeholder={this.placeholder}
                         solution={this.solution}
                     />
                 </div>

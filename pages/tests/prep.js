@@ -8,14 +8,10 @@ class PREP extends Component {
     hint = `La Profilassi Pre-Esposizione (PreP) è efficace 
             e indicata nelle persone che hanno rapporti con più partner 
             e prevede l’utilizzo di farmaci anti-HIV prima di un comportamento a rischio.`;
-    
-    textPreInput = 'MI SONO INNAMORATO DI';
-    textPreInput2 = 'T';
-    
-    textPostInput = 'E';
-    textPostInput2 = '';
 
-    solution = ['R'];
+    text = 'RICOMINCIO DA $RE$'
+    solution = ['P', 'P'];
+    placeholder = '$';
 
     render() {
         return (
@@ -23,10 +19,8 @@ class PREP extends Component {
                 <div className='tests-container'>
                     <Quiz
                         hint={this.hint}
-                        textPreInput={this.textPreInput}
-                        textPreInput2={this.textPreInput2}
-                        textPostInput={this.textPostInput}
-                        textPostInput2={this.textPostInput2}
+                        text={this.text}
+                        placeholder={this.placeholder}
                         solution={this.solution}
                     />
                 </div>

@@ -6,15 +6,11 @@ import Quiz from '../../components/quiz/Quiz';
 class HIVTest extends Component {
 
     hint = `Nelle strutture pubbliche il test dell’HIV è sempre gratuito e confidenziale. 
-            Il test salivare può essere acquistato anche in farmacia.`;
+            Farlo precocemente e iniziare subito la terapia giusta evita la diffusione del virus agli altri e protegge la tua salute.`;
     
-    textPreInput = 'HAI';
-    textPreInput2 = '';
-    
-    textPostInput = 'RATO';
-    textPostInput2 = 'IL TEST?';
-
-    solution = ['C','O','M','P'];
+    text = 'NON C’È DUE SENZA T$$$'
+    solution = ['E','S','T'];
+    placeholder = '$';
     
     render() {
         return (
@@ -22,10 +18,8 @@ class HIVTest extends Component {
                 <div className='tests-container'>
                     <Quiz
                         hint={this.hint}
-                        textPreInput={this.textPreInput}
-                        textPreInput2={this.textPreInput2}
-                        textPostInput={this.textPostInput}
-                        textPostInput2={this.textPostInput2}
+                        text={this.text}
+                        placeholder={this.placeholder}
                         solution={this.solution}
                     />
                 </div>

@@ -7,14 +7,10 @@ class Condom extends Component {
 
     hint = `Il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
             dall'inizio del rapporto, per tutta la sua durata e se non si rompe.`;
-    
-    textPreInput = 'NON ROMPETEMI I';
-    textPreInput2 = 'CO';
-    
-    textPostInput = '';
-    textPostInput2 = '';
-
-    solution = ['N','D','O','M'];
+            
+    text = 'AMARCO$D$$'
+    solution = ['N','O','M'];
+    placeholder = '$';
 
     render() {
         return (
@@ -22,10 +18,8 @@ class Condom extends Component {
                 <div className='tests-container'>
                     <Quiz
                         hint={this.hint}
-                        textPreInput={this.textPreInput}
-                        textPreInput2={this.textPreInput2}
-                        textPostInput={this.textPostInput}
-                        textPostInput2={this.textPostInput2}
+                        text={this.text}
+                        placeholder={this.placeholder}
                         solution={this.solution}
                     />
                 </div>

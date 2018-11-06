@@ -38,6 +38,7 @@ class Quiz extends Component {
     }
 
     onkeyUpHandler = (event, index) => {
+
         let myTarget = event.target;
 
         // If the user press backspace or shift
@@ -48,10 +49,16 @@ class Quiz extends Component {
             event.keyCode !== 16
         ) {
             // Find the next cell not disabled (exact)
-            while (myTarget.nextSibling.disabled) {
-                myTarget = myTarget.nextSibling;
+            if (myTarget.nextSibling !== null) {
+                while (
+                    myTarget.nextSibling.disabled ||
+                    myTarget.nextSibling.length == 1
+                ) {
+                    myTarget = myTarget.nextSibling;
+                    if (myTarget.nextSibling == null) break;
+                }
+                if (myTarget.nextSibling) myTarget.nextSibling.focus();
             }
-            myTarget.nextSibling.focus();
         }
         else if (
             // If the user press backspace and the cell is empty
@@ -67,13 +74,21 @@ class Quiz extends Component {
                 event.target.value === undefined
             )
         ) {
-            // Find the next cell not disabled (exact)
-            while (myTarget.previousSibling.disabled) {
-                myTarget = myTarget.previousSibling;
+            // Find the previous cell not disabled (exact)
+            if (myTarget.previousSibling !== null) {
+                while
+                (
+                    myTarget.previousSibling.length == 1 ||
+                    myTarget.previousSibling.disabled
+                ) {
+                    myTarget = myTarget.previousSibling;
+                    if (myTarget.previousSibling == null) break;
+                }
+                if (myTarget.previousSibling) myTarget.previousSibling.focus();
             }
-            myTarget.previousSibling.focus();
         }
 
+        // exacts variable clone
         const exacts = JSON.parse(JSON.stringify(this.state.exacts));
         if (event.target.value === this.props.solution[index]) {
             exacts[index] = true;
@@ -87,20 +102,30 @@ class Quiz extends Component {
         }
     }
 
-    renderInputs = () => {
-        return this.props.solution.map((el, index) => {
-            let key = `quiz_input_` + index;
-            return (
-                <input
-                    ref={key}
-                    key={index}
-                    disabled={this.state.exacts[index]}
-                    className="quiz-input"
-                    value={this.state.inputValues[index]}
-                    onChange={event => this.onChangeHandler(event, index)}
-                    onKeyUp={event => this.onkeyUpHandler(event, index)}
-                />);
-        })
+    renderText = () => {
+        let inputIndex = -1;
+        return this.props.text.split('').map((el, index) => {
+            if (el === this.props.placeholder) {
+                return (this.renderInput(++inputIndex));
+            }
+            else return el;
+        });
+    }
+
+    renderInput = (index) => {
+        // let key = `quiz_input_` + index;
+        return (
+            <input
+                // ref={key}
+                key={index}
+                disabled={this.state.exacts[index]}
+                className="quiz-input"
+                value={this.state.inputValues[index]}
+                onChange={event => this.onChangeHandler(event, index)}
+                onKeyUp={event => this.onkeyUpHandler(event, index)}
+            />
+        );
+
     };
 
     renderSolutionLink = (won) => { return won ? '/congrats' : '#'; }
@@ -124,13 +149,9 @@ class Quiz extends Component {
                 <Header className='section-header' size='huge'> {this.props.hint} </Header>
                 <p>{subtitle}</p>
                 <div className='quiz-area'>
-                    <div className='quiz-text'>{this.props.textPreInput}</div>
-                    <br />
-                    <div className='quiz-text'>{this.props.textPreInput2}</div>
-                    {this.renderInputs()}
-                    <div className='quiz-text'>{this.props.textPostInput}</div>
-                    <br />
-                    <div className='quiz-text'>{this.props.textPostInput2}</div>
+                    <div className='quiz-text'>
+                        {this.renderText()}
+                    </div>
                 </div>
                 {this.renderButton()}
             </Container>
