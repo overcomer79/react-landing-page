@@ -1,5 +1,5 @@
 .quiz-area {
-    padding: 25px;
+    padding: 25px 2vw;
     font-size: 60px;
     font-family: 'Ubuntu Mono', Fallback, sans-serif;
     letter-spacing: 15px;
@@ -8,7 +8,7 @@
 }
 
 .quiz-text {
-    display: inline-block;
+    /* display: inline-block; */
     word-break: break-word;
     line-height: 64px;
 }
