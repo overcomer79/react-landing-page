@@ -20,6 +20,7 @@ export default () => {
                 showArrows={false}
                 showThumbs={false}
                 emulateTouch={true}
+                interval={10000} // 10s
             >
                 <div>
                     <img src="static/images/carousel/1_img_pillola.jpg" />

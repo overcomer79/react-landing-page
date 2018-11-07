@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import Layout from '../../components/Layout';
 
 import Quiz from '../../components/quiz/Quiz';
+import { css } from 'react-emotion';
+import { BounceLoader } from 'react-spinners';
+
+const override = css`
+    margin: 20vh 40vw;
+`;
 
 class PREP extends Component {
 
@@ -13,7 +19,28 @@ class PREP extends Component {
     solution = ['P', 'P'];
     placeholder = '$';
 
+    state = {
+        loading: true
+    };
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ loading: false }), 1500);
+    }
+
     render() {
+        const { loading } = this.state;
+
+        if (loading) {
+            return (
+                <BounceLoader
+                    className={override}
+                    sizeUnit={"vw"}
+                    size={20}
+                    color={'#df2c3f'}
+                    loading={loading}
+                />
+            );
+        }
         return (
             <Layout down={true}>
                 <div className='tests-container'>

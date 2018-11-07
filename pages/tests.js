@@ -5,10 +5,38 @@ import {
     Button
 } from 'semantic-ui-react';
 
+import { css } from 'react-emotion';
+import { BounceLoader } from 'react-spinners';
+
+const override = css`
+    margin: 20vh 40vw;
+`;
+
 import Layout from './../components/Layout';
 
 class Test extends Component {
+    state = {
+        loading: true
+    };
+
+    componentDidMount() {
+        setTimeout(() => this.setState({ loading: false }), 1500);
+    }
+
     render() {
+        const { loading } = this.state;
+
+        if (loading) {
+            return (
+                <BounceLoader
+                    className={override}
+                    sizeUnit={"vw"}
+                    size={20}
+                    color={'#df2c3f'}
+                    loading={loading}
+                />
+            );
+        }
         return (
             <Layout down={true}>
                 <div className='tests-container'>

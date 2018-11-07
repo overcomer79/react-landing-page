@@ -32,7 +32,7 @@ export default () => {
                                         <Grid.Column>
                                             <div className='footer-contact'>
                                                 <span style={{ marginRight: 10 }}>Contattaci: </span>
-                                                <a href="mailto:sample@sample.it">
+                                                <a href="mailto:amareconsapienza@gmail.com">
                                                     <img
                                                         className='footer-icon' 
                                                         src="/static/images/email.svg"
