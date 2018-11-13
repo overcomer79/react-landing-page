@@ -30,9 +30,10 @@ export default () => {
                         </Header>
                         <p className='post-text'>
                             “Se una persona sieropositiva assume con regolarità la <b>terapia anti-HIV</b>,
-                            può essere considerata <b>non più infettiva</b> in quanto la replicazione virale nel suo sangue e
-                            nei suoi liquidi sessuali viene bloccata dalla terapia. <br />
-                            <b>Ama con sapienza!</b>”
+                            può essere considerata <b>non a rischio di contagio</b> in quanto la replicazione virale nel suo sangue e
+                            nei suoi liquidi sessuali viene totalmente bloccata dalla terapia<big><sup>*</sup></big>. < br/>
+                            <b>Ama con sapienza!</b>” <br />
+                            <big><sup>*</sup></big> <small>CDC Atlanta - Linee Guida Italiane HIV 2018 </small>
                         </p>
                     </div>
                 </div>
@@ -57,9 +58,9 @@ export default () => {
                             <a className='section-title post-title'> CONDOM? </a>
                         </Header>
                         <p className='post-text'>
-                            “L’uso corretto del preservativo (maschile e femminile) protegge dal rischio di infezione da HIV durante ogni tipo di rapporto sessuale. 
-                            Il condom deve essere utilizzato fin dall’inizio del rapporto. 
-                            E’ l’unico anticoncezionale che protegge da tutte le malattie sessualmente trasmesse.<br />
+                            “L’uso corretto del preservativo (maschile e femminile) protegge dal rischio di infezione da HIV durante ogni tipo di rapporto sessuale.
+                            Il condom deve essere utilizzato fin dall’inizio del rapporto.
+                            E’ l’<b>unico anticoncezionale</b> che protegge da tutte le malattie sessualmente trasmesse.<br />
                             <b>Ama con sapienza!</b>”
                         </p>
                     </div>
@@ -71,7 +72,7 @@ export default () => {
                             <a className='section-title post-title'> PEP: COSA FARE DOPO? </a>
                         </Header>
                         <p className='post-text'>
-                            “Se hai avuto un rapporto ad alto rischio di contagio HIV, rivolgiti ad un Centro di Malattie Infettive entro 24-48 ore: 
+                            “Se hai avuto un rapporto ad alto rischio di contagio HIV, rivolgiti ad un Centro di Malattie Infettive entro 24-48 ore:
                             puoi iniziare, se indicato, una profilassi post-esposizione, detta PEP ed evitare di contrarre l’HIV.<br />
                             <b>Ama con sapienza!</b>”
                         </p>
@@ -84,8 +85,9 @@ export default () => {
                             <a className='section-title post-title'> PreP: COSA FARE PRIMA? </a>
                         </Header>
                         <p className='post-text'>
-                            “Se hai rapporti con più di un partner occasionale in 3 mesi, non riesci a usare il condom, usi sostanze psicoattive (CHEM), 
-                            puoi evitare di contrarre l’HIV assumendo una terapia pre-esposizione, detta PreP, prescritta dal medico.<br />
+                            “Se pensi di avere rapporti con più di un partner occasionale in 3 mesi, non riesci a usare il condom, 
+                            usi sostanze psicoattive (CHEM), puoi evitare di contrarre l’HIV assumendo una 
+                            <b>terapia pre-esposizione</b>, detta PreP, prescritta dal medico.<br />
                             <b>Ama con sapienza!</b>”
                         </p>
                     </div>
@@ -97,7 +99,7 @@ export default () => {
                             <a className='section-title post-title'> TEST and TREAT: COSA FARE IN GRAVIDANZA? </a>
                         </Header>
                         <p className='post-text'>
-                            “Se sei in gravidanza, effettua sempre il test HIV. Se è positivo, inizia subito la terapia anti-HIV, 
+                            “Se sei in gravidanza, effettua sempre il test HIV. Se è positivo, inizia subito la terapia anti-HIV,
                             concorda il tipo di parto e il tipo di allattamento con il medico, così da bloccare la trasmissione di HIV al tuo bambino.<br />
                             <b>Ama con sapienza!</b>”
                         </p>

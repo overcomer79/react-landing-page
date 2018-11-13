@@ -15,8 +15,8 @@ class PEP extends Component {
             anti-HIV subito dopo (entro 24-48 ore) un comportamento 
             a rischio per evitare di contrarre il virus.`;
 
-    text = 'IN CASO DI EMERGENZA CI PENSA $E$'
-    solution = ['P', 'P'];
+    text = 'FALLO PE$ TE!'
+    solution = ['P'];
     placeholder = '$';
 
     state = {

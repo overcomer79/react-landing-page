@@ -11,8 +11,8 @@ const override = css`
 
 class Condom extends Component {
 
-    hint = `Il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
-            dall'inizio del rapporto, per tutta la sua durata e se non si rompe.`;
+    hint = `Ricorda che il preservativo elimina il rischio di contrarre l’infezione da HIV se indossato fin 
+            dall'inizio del rapporto e per tutta la sua durata.`;
             
     text = 'AMARCO$D$$'
     solution = ['N','O','M'];

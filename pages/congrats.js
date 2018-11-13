@@ -43,8 +43,9 @@ class Congrats extends Component {
                     <Container>
                         <Header className='section-header' size='huge'>Complimenti!</Header>
                         <p>
-                            Hai sbloccato un nuovo tassello dell’installazione sulla scalinata monumentale. <br />
-                            Grazie a te la cura è vicina ed è sotto i tuoi occhi.
+                            Grazie a te il virus dell’informazione si sta diffondendo rapidamente. <br />
+                            Hai sbloccato un nuovo tassello dell’installazione sulla scalinata monumentale
+                            del Rettorato della Sapienza.
                         </p>
                         <div style={{ textAlign: 'center' }}>
 

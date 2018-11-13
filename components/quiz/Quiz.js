@@ -134,10 +134,10 @@ class Quiz extends Component {
         return (
             <div>
                 <a href={this.renderSolutionLink(!!this.state.won)}>
-                    <Button primary basic disabled={!this.state.won}> CONTINUA IL GIOCO </Button>
+                    <Button primary basic disabled={!this.state.won}> AVANTI </Button>
                 </a>
                 <a href='/#project-section'>
-                    <Button primary basic> ESCI DAL GIOCO </Button>
+                    <Button primary basic> ESCI </Button>
                 </a>
             </div>
         );

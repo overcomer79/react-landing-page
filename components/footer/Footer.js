@@ -20,8 +20,17 @@ export default () => {
                                         @Tutti diritti riservati
                                     </p>
                                     <p>
-                                        Amare con Sapienza è un’iniziativa a cura del Dipartimento di Malattie Infettive
-                                        e Sanità Pubblica dell’Università “Sapienza” di Roma.
+                                        Amare con Sapienza è un’iniziativa a cura della Sezione di Malattie Infettive 
+                                        del Dipartimento di Sanità Pubblica e Malattie Infettive dell’Università “Sapienza” di Roma. <br/>
+                                        <b>Responsabile:</b> Vincenzo Vullo <br/>
+                                        <b>Collaboratori scientifici:</b> Miriam Lichtner, Serena Vita, Paola Zuccalà, Claudio Maria Mastroianni
+                                    </p>
+                                    <h5><b>CREDITS</b></h5>
+                                    <p>
+                                    La campagna Having Information Virus è stata ideata e realizzata da Valerio Zito e Dario Becce. <br />
+                                    Sviluppo e programmazione a cura di Pierpaolo Monaco. <br />
+                                    Ideazione e realizzazione installazione a cura di Lorenzo Lo sasso, Chiara Massimino e Benedetta Vita. <br />
+                                    Coordinamento: Giuseppe Morlino.
                                     </p>
                                 </div>
                             </Grid.Column>

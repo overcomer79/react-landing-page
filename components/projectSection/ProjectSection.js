@@ -22,10 +22,13 @@ class ProjectSection extends Component {
                         <Header className='section-header' size='huge'>Amare con sapienza</Header>
 
                         <p>
-                            Amare con Sapienza è un'iniziativa a cura del <b> Dipartimento di Malattie Infettive
-                            e Sanità Pubblica</b> dell'Università Sapienza.</p>
+                            Amare con Sapienza è un'iniziativa a cura del della Sezione di Malattie Infettive del 
+                            <b> Dipartimento di Sanità Pubblica e Malattie Infettive dell'Università “Sapienza”. </b> <br />
+                            <b> È coordinata dal team di ricerca del Prof. Vincenzo Vullo, da anni impegnato nella lotta
+                            all’infezione da HIV/AIDS. </b>
+                        </p>
                         <p>
-                            L'obiettivo del progetto, <b>vincitore del bando Digital Health 2017</b>,
+                            L'obiettivo del progetto, vincitore del bando <b> Digital Health 2017 </b>,
                             è valutare l'efficacia di digital ambient media nella prevenzione dell'infezione da HIV.
                         </p>
                     </Container>
