@@ -1,8 +1,7 @@
 import React from 'react';
 import {
     Container,
-    Grid,
-    Segment
+    Grid
 } from 'semantic-ui-react';
 
 import './footer.css';
@@ -29,7 +28,7 @@ export default () => {
                                     <p>
                                     La campagna Having Information Virus è stata ideata e realizzata da Valerio Zito e Dario Becce. <br />
                                     Sviluppo e programmazione a cura di Pierpaolo Monaco. <br />
-                                    Ideazione e realizzazione installazione a cura di Lorenzo Lo sasso, Chiara Massimino e Benedetta Vita. <br />
+                                    Ideazione e realizzazione installazione a cura di Lorenzo Lo sasso, Chiara Massimino, Benedetta Vita e Marco Pesoli. <br />
                                     Coordinamento: Giuseppe Morlino.
                                     </p>
                                 </div>
@@ -53,13 +52,13 @@ export default () => {
                                         <Grid.Column>
                                              <div className='footer-contact'>
                                                 <span>Seguici su: </span>
-                                                <a href='https://www.facebook.com/search/top/?q=%23amareconsapienza' target='_blank'>
+                                                <a href='https://www.facebook.com/hashtag/amaconsapienza' target='_blank'>
                                                     <img
                                                         className='footer-icon'
                                                         src="/static/images/facebook.svg"
                                                         alt='facebook page' />
                                                 </a>
-                                                <a href='https://www.instagram.com/explore/tags/amareconsapienza/' target='_blank'>
+                                                <a href='https://www.instagram.com/explore/tags/amaconsapienza/' target='_blank'>
                                                     <img
                                                         className='footer-icon'
                                                         src="/static/images/instagram.svg"

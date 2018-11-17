@@ -6,6 +6,7 @@ import SimpleStorage from 'react-simple-storage';
 import { css } from 'react-emotion';
 import { BounceLoader } from 'react-spinners';
 
+
 const override = css`
     margin: 20vh 40vw;
 `;
@@ -35,8 +36,10 @@ class Landing extends Component {
     };
 
     componentDidMount() {
+        
         window.addEventListener('scroll', this.handleScroll, true);
-
+        
+        /*
         // This avoid to refresh the page on click of every link
         document.querySelectorAll("a[href^='/']").forEach(node => {
             node.addEventListener('click', e => {
@@ -49,18 +52,22 @@ class Landing extends Component {
                 }
             });
         });
+        */
+        
 
         // call the function in order to configure the initial state
         // the state can change clicking the menu links
         this.handleScroll();
-
+        
         //this.setState({ loading: false });
         setTimeout(() => this.setState({ loading: false }), 1500);
     }
 
     componentWillUnmount() {
+        /*
         window.removeEventListener('scroll', this.handleScroll, true);
         //this.setState({ loading: true });
+        */
     }
 
     onClickForTest = (e) => {
