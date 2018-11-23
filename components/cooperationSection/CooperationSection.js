@@ -12,7 +12,7 @@ export default () => {
         <div>
             <a className="anchor" id="cooperation-section" />
             <Container className='cooperation-section'>
-                <p> Iniziativa a cura del <b>Dipartimento di Malattie Infettive e Sanità Pubblica dell’Università Sapienza</b> </p>
+                <p> Iniziativa a cura del <b>Dipartimento di Sanità Pubblica e Malattie Infettive dell’Università Sapienza</b> </p>
 
                 <Grid stackable columns={4}>
                     <Grid.Row textAlign='center'>
@@ -20,7 +20,7 @@ export default () => {
                             <p className='cooperation-logo-desc'>Progetto vincitore di:</p>
                             <a
                                 className='cooperation-logo'
-                                href='https://www.fellowshipgileaditalia.it/digital-health-program'
+                                href='http://www.fellowshipgileaditalia.it/digital-health-program'
                                 target='_blank'
                             >
                                 <img src="static/logos/digital_health.png" alt="logo digital heath" />

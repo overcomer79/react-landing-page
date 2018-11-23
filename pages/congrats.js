@@ -49,14 +49,29 @@ class Congrats extends Component {
                         </p>
                         <div style={{ textAlign: 'center' }}>
 
+                            
                             {/* <div className='video-container'>
+                                <iframe
+                                    width="560" height="315"
+                                    src="https://www.youtube.com/embed/P80WOvZ_khg?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&amp;mute=1"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                    >
+                                </iframe>
+                            </div> */}
+
+
+                            <div className='video-container'>
                                 <Embed
-                                    id='O6Xo21L0ybE'
+                                    id='P80WOvZ_khg?autoplay=1&amp;mute=1'
                                     brandedUI
                                     source='youtube'
-                                    size='small'
+                                    aspectRatio='4:3'
+                                    active
+                                    autoplay
                                 />
-                            </div> */}
+                            </div>
 
                             <a href='\#project-section'>
                                 <Button primary basic> SCOPRI IL PROGETTO </Button>

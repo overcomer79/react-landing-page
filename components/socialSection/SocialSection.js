@@ -37,13 +37,13 @@ export default () => {
             </Header>
 
             <div className='footer-image-group'>
-                <Image className='footer-image' src="static/images/footer/1.png" />
-                <Image className='footer-image' src="static/images/footer/2.png" />
-                <Image className='footer-image' src="static/images/footer/3.png" />
-                <Image className='footer-image' src="static/images/footer/4.png" />
-                <Image className='footer-image image-mobile-hidden' src="static/images/footer/5.png" />
-                <Image className='footer-image image-mobile-hidden' src="static/images/footer/6.png" />
-                <Image className='footer-image image-mobile-hidden' src="static/images/footer/7.png" />
+                <Image className='footer-image' src="static/images/footer/1.jpg" />
+                <Image className='footer-image' src="static/images/footer/2.jpg" />
+                <Image className='footer-image' src="static/images/footer/3.jpg" />
+                <Image className='footer-image' src="static/images/footer/4.jpg" />
+                <Image className='footer-image image-mobile-hidden' src="static/images/footer/5.jpg" />
+                <Image className='footer-image image-mobile-hidden' src="static/images/footer/6.jpg" />
+                <Image className='footer-image image-mobile-hidden' src="static/images/footer/7.jpg" />
             </div>
         </div>
 
