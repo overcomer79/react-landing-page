@@ -1,25 +1,26 @@
 import React from 'react';
 import {
-    Embed,
-    Image
+    Embed
 } from 'semantic-ui-react';
 
-/**
- * Nel frattempo che si caricherà un video verrà utilizzata questa immagine sostitutiva
- */
+var aStyle = {
+    display: 'block',
+    position: 'relative',
+    visibility: 'hidden',
+}
+
 export default () => {
     return (
         <div>
-            <a className="anchor" id="video-section" />
-
-            <Image src='static/images/img_pre_video.jpg' fluid />
-
-            {/* <Embed 
-            id='O6Xo21L0ybE'
-            brandedUI
-            placeholder='static/images/img_video.jpg' 
-            source='youtube' 
-            /> */}
+            <a style={aStyle} id="video-section" />
+            <Embed
+                id='ZcIHfcSB6-o?autoplay=1&amp;mute=1'
+                brandedUI
+                source='youtube'
+                aspectRatio='16:9'
+                placeholder='static/images/img_pre_video.jpg'
+                active
+            />
 
         </div>
 

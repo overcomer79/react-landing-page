@@ -11,7 +11,7 @@ class Header extends Component {
 
     getImageSrc = (pos) => {
         if (pos) return '/static/images/Ribbon_logo.png';
-        else return '/static/images/ribbon.png';
+        else return '/static/images/Ribbon.png';
     }
 
     render() {
